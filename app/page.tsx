@@ -12,6 +12,7 @@ export default async function HomePage() {
   const { dict } = await getI18n();
   const highlightedProjects = dict.projectsPage.projects.slice(0, 2);
   const profileMeta = [dict.profile.email, dict.profile.phone].filter(Boolean).join(" · ");
+  const profileImage = dict.profile.image || "/certificates/images/profile.png";
 
   return (
     <main>
@@ -54,7 +55,7 @@ export default async function HomePage() {
         <div className="relative lg:col-span-5 motion-rise-in [animation-delay:120ms]">
           <div className="relative aspect-4/5 overflow-hidden rounded-2xl border border-white/10 bg-[#0d162b]">
             <Image
-              src="/certificates/images/profile.png"
+              src={profileImage}
               alt="Profile visual"
               fill
               className="object-cover "

@@ -1,0 +1,243 @@
+{
+  "profile": {
+    "name": "Sittinon Tongsua",
+    "role": "นักพัฒนา Full-Stack",
+    "email": "sittinon.tongsua@gmail.com",
+    "phone": "092-754-5385",
+    "github": "https://github.com/SittinonNC",
+    "summary": "นักพัฒนา Full-stack ที่มีประสบการณ์จริงในการสร้างเว็บแอปพลิเคชันระดับองค์กร ปัจจุบันฝึกงานที่ Bluebik Digital และพัฒนาระบบธุรกรรมมูลค่าสูงด้วยเฟรมเวิร์กสมัยใหม่",
+    "socialLinks": [
+      { "label": "GitHub", "href": "https://github.com/SittinonNC" },
+      { "label": "อีเมล", "href": "mailto:sittinon.tongsua@gmail.com" },
+      { "label": "โทรศัพท์", "href": "tel:+66927545385" }
+    ]
+  },
+  "header": {
+    "navItems": [
+      { "label": "หน้าแรก", "href": "/" },
+      { "label": "ผลงาน", "href": "/projects" },
+      { "label": "ทักษะ", "href": "/skills" },
+      { "label": "ประสบการณ์", "href": "/skills#experience" },
+      { "label": "ติดต่อ", "href": "/contact" }
+    ],
+    "contactCta": "ติดต่อ",
+    "languageLabel": "ภาษา",
+    "englishShort": "EN",
+    "thaiShort": "TH"
+  },
+  "footer": {
+    "copyright": "© 2026 Sittinon Tongsua. นักพัฒนา Full-Stack · Next.js · React · Node.js"
+  },
+  "home": {
+    "metaTitle": "หน้าแรก",
+    "availability": "เปิดรับโอกาสฝึกงานและงานประจำ",
+    "headline": "ผมคือ {name} เป็น{role}ที่โฟกัสการสร้างระบบเว็บสมัยใหม่",
+    "viewProjects": "ดูผลงาน",
+    "getInTouch": "ติดต่อผม",
+    "currentFocus": "สิ่งที่กำลังโฟกัส",
+    "stackEyebrow": "เทคโนโลยีหลัก",
+    "stackHeading": "พัฒนาเพื่อประสิทธิภาพ การดูแลง่าย และ UX ที่ดี",
+    "stackDescription": "มีประสบการณ์ลงมือจริงทั้งฟีเจอร์ระดับองค์กร สถาปัตยกรรม API และการตรวจสอบข้อมูลฝั่งไคลเอนต์ที่แข็งแรง",
+    "coreSkillsLabel": "01 / ทักษะหลัก",
+    "coreSkillsTitle": "การพัฒนาเว็บสำหรับงานจริง",
+    "experienceLabel": "02 / ประสบการณ์",
+    "experiencePeriod": "2025 - ปัจจุบัน",
+    "experienceRole": "Developer Intern @ Bluebik Digital",
+    "featuredWork": "ผลงานเด่น",
+    "ctaHeading": "มาสร้างโปรดักต์ถัดไปด้วยกัน",
+    "startProject": "เริ่มโปรเจกต์",
+    "emailMe": "ส่งอีเมล",
+    "coreStack": [
+      "Next.js 16",
+      "React 19",
+      "Node.js",
+      "TypeScript",
+      "Zustand",
+      "TanStack Query",
+      "Supabase",
+      "Tailwind CSS"
+    ]
+  },
+  "projectsPage": {
+    "metaTitle": "ผลงาน",
+    "metaDescription": "โปรเจกต์ผลงานและงานฝึกงานของ Sittinon Tongsua",
+    "eyebrow": "ผลงานที่คัดเลือก",
+    "titlePrefix": "โปรเจกต์",
+    "titleHighlight": "ที่น่าสนใจ",
+    "description": "ผลงานจากการฝึกงานองค์กรและโปรเจกต์ส่วนตัวที่เน้นความปลอดภัย ประสิทธิภาพ และสถาปัตยกรรมที่นำกลับใช้ซ้ำได้",
+    "featuredBadge": "ผลงานเด่น",
+    "imageUnavailable": "ไม่สามารถแสดงรูปภาพได้เนื่องจากข้อมูลเป็นความลับ",
+    "viewDemo": "ดูเดโม",
+    "projects": [
+      {
+        "title": "ระบบธุรกรรมมูลค่าสูง",
+        "category": "ฝึกงานที่ Bluebik Digital",
+        "description": "พัฒนาโมดูล User Management และ Admin พร้อม RBAC อย่างเข้มงวด สร้างคอมโพเนนต์จาก Figma มากกว่า 20 รายการ และปรับปรุง state/API flow ด้วย Zustand, TanStack Query และ Axios",
+        "image": "",
+        "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "TanStack Query", "Zod"],
+        "demoUrl": "#",
+        "featured": true
+      },
+      {
+        "title": "Tiwgun (ติวกัน)",
+        "category": "โปรเจกต์ส่วนตัว · 2026",
+        "description": "แพลตฟอร์มแบ่งปันเอกสารการเรียนรู้สองภาษา (ไทย/อังกฤษ) ใช้ hybrid encryption (RSA-OAEP + AES-GCM) รองรับ TTFB ต่ำกว่าหนึ่งวินาทีด้วย RSC + caching และมีความสามารถแบบเรียลไทม์ผ่าน Supabase",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAAUzOlrCetqQ3fqy6E7yfVFuKcERMNb3nYJoCa-pht6FrwKM7-yF0rUn3V1Eoncsm9TqOQmRkVULCw2FUYmMxFduPQc20NdwxxwKc9tfuksxXadfjSha0GKrfkssXuYcIggFsAb0nytOfEEQxOGUcuvldTAibFJd_jhEkz82kF-pOPVbXTRfjw8wOXQ487VEAumdaWkHygihKDlluJA_zxWGf0KR35OaPE7vekAt0FCVwdwvx7pS2k-5h9RMkPiliYKpuVzYcs6WiW",
+        "stack": ["Next.js 16", "React 19", "Supabase", "GSAP", "Zustand", "TanStack Query"],
+        "demoUrl": "https://tiwgun.vercel.app/th"
+      },
+      {
+        "title": "แพลตฟอร์ม E-Commerce และระบบจัดการรายรับรายจ่าย",
+        "category": "โปรเจกต์กลุ่ม · 2024",
+        "description": "พัฒนาระบบ E-Commerce แบบ Full-stack ร่วมทีม 4 คน รวมถึงออกแบบฐานข้อมูลเชิงสัมพันธ์สำหรับผู้ใช้ สินค้า และธุรกรรม ภายใต้กระบวนการ Agile",
+        "image": "",
+        "stack": ["Angular", "Node.js", "Express.js", "SQL Server"],
+        "demoUrl": "#"
+      }
+    ]
+  },
+  "skillsPage": {
+    "metaTitle": "ทักษะและประสบการณ์",
+    "metaDescription": "ความเชี่ยวชาญเชิงเทคนิค เครื่องมือ และเส้นทางอาชีพ",
+    "title": "{highlight} และประวัติการทำงาน",
+    "titleHighlight": "ความเชี่ยวชาญทางเทคนิค",
+    "description": "มีพื้นฐานแข็งแรงทั้งฝั่ง frontend และ backend สำหรับงาน production โดยโฟกัสด้าน performance, security และ clean code",
+    "coreEngineering": "วิศวกรรมหลัก",
+    "toolingPlatforms": "เครื่องมือและแพลตฟอร์ม",
+    "education": "การศึกษา",
+    "educationPeriod": "2022 - คาดว่าจะจบ 2026",
+    "educationDegree": "วิทยาศาสตรบัณฑิต สาขาเทคโนโลยีสารสนเทศ",
+    "educationSchool": "มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา",
+    "educationGpa": "GPAX 3.49 / 4.00 (เกียรตินิยมอันดับสอง)",
+    "awardsTitle": "รางวัลและใบรับรอง",
+    "certificatesTitle": "ใบรับรอง (Certificates)",
+    "viewCredential": "ดูใบรับรอง",
+    "closePreview": "ปิด",
+    "openInNewTab": "เปิดในแท็บใหม่",
+    "unsupportedPreview": "ไฟล์ประเภทนี้ไม่รองรับการพรีวิวในโมดอล",
+    "awards": [
+      "Excellent Presentation Award (Oral) · AUCC2025",
+      "Data Engineering with Microsoft Azure · 2024",
+      "ICDL: Application Essentials · 2024",
+      "Web Application Development: React (DAT) · 2023"
+    ],
+    "certificates": [
+      {
+        "name": "Data Engineering with Microsoft Azure",
+        "issuer": "Microsoft / Partner Program",
+        "year": "2024",
+        "credentialUrl": "/certificates/pdfs/microsoft-azure.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "Certificate of Academic Excellence (Academic Year 2024)",
+        "issuer": "Kasetsart University Sriracha Campus",
+        "year": "2024",
+        "credentialUrl": "/certificates/pdfs/academic-year-2024.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "ICDL: Application Essentials",
+        "issuer": "ICDL Thailand",
+        "year": "2024",
+        "credentialUrl": "/certificates/pdfs/icdl.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "Web Application Development: React (DAT)",
+        "issuer": "DAT Program",
+        "year": "2023",
+        "credentialUrl": "/certificates/pdfs/react-dat.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "Excellent Presentation Award (Oral Presentation) AUCC2025",
+        "issuer": "The Asia Undergraduate Conference on Computing (AUCC) & Uttaradit Rajabhat University",
+        "year": "2025",
+        "credentialUrl": "/certificates/pdfs/aucc-award-certificate.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "Certificate of Academic Excellence (Academic Year 2023)",
+        "issuer": "Kasetsart University Sriracha Campus",
+        "year": "2023",
+        "credentialUrl": "/certificates/pdfs/academic-year-2023.pdf",
+        "credentialType": "pdf"
+      }
+    ],
+    "experienceTitle": "ประสบการณ์",
+    "ctaHeading": "พร้อมสร้างระบบที่ขยายต่อได้ไปด้วยกันไหม?",
+    "viewGithub": "ดู GitHub",
+    "downloadResume": "ดาวน์โหลด Resume",
+    "contactMe": "ติดต่อผม",
+    "skillRows": [
+      { "label": "Next.js / React", "value": 93 },
+      { "label": "TypeScript / Node.js", "value": 90 },
+      { "label": "State + Query (Zustand / TanStack)", "value": 88 },
+      { "label": "Validation + API Design (Zod / Axios)", "value": 87 }
+    ],
+    "tooling": ["Shadcn UI", "GSAP", "Supabase", "SQL Server", "Git/GitHub", "Postman", "Azure", "Power BI"],
+    "experiences": [
+      {
+        "year": "ม.ค. 2025 — ปัจจุบัน",
+        "role": "Developer Intern",
+        "company": "Bluebik Digital Company Limited",
+        "points": [
+          "พัฒนาโมดูล User Management และ Admin พร้อม Role-Based Access Control ตามเอกสาร SA และมาตรฐานโค้ดของทีม",
+          "สร้างคอมโพเนนต์ UI มากกว่า 20 รายการจาก Figma ให้ตรงดีไซน์ด้วย Next.js, Tailwind CSS และ Shadcn UI",
+          "ดูแล global state ด้วย Zustand และปรับปรุง data fetching/caching ด้วย TanStack Query + Axios",
+          "ทำ client-side validation ด้วย Zod เพื่อลด payload ที่ไม่ถูกต้องก่อนถึง backend"
+        ]
+      },
+      {
+        "year": "2026",
+        "role": "โปรเจกต์ส่วนตัว",
+        "company": "Tiwgun (ติวกัน)",
+        "points": [
+          "พัฒนาแพลตฟอร์มการเรียนรู้สองภาษา (ไทย/อังกฤษ) พร้อมการแชร์และค้นหาเนื้อหาอย่างปลอดภัย",
+          "ใช้งาน hybrid encryption (RSA-OAEP + AES-GCM) ผ่าน Web Crypto API เพื่อยกระดับความปลอดภัยของ API",
+          "ได้ TTFB ต่ำกว่าหนึ่งวินาทีด้วย React Server Components, กลยุทธ์ caching แบบละเอียด และ TanStack Query"
+        ]
+      },
+      {
+        "year": "2024",
+        "role": "โปรเจกต์กลุ่ม (ทีม 4 คน)",
+        "company": "E-Commerce Platform & Expense Management System",
+        "points": [
+          "พัฒนาแพลตฟอร์ม E-commerce แบบ full-stack ด้วย Angular, Node.js, Express.js และ SQL Server",
+          "ออกแบบ schema ฐานข้อมูลเชิงสัมพันธ์สำหรับผู้ใช้ สินค้า และธุรกรรมภายใต้รอบพัฒนาแบบ Agile"
+        ]
+      }
+    ]
+  },
+  "contactPage": {
+    "metaTitle": "ติดต่อ",
+    "metaDescription": "ฟอร์มติดต่อและช่องทางโซเชียลสำหรับการร่วมงาน",
+    "title": "มาสร้างโปรดักต์{highlight}ของคุณกัน",
+    "titleHighlight": "ถัดไป",
+    "description": "เปิดรับงานร่วมพัฒนา ฝึกงาน และโอกาสงานวิศวกรรมซอฟต์แวร์แบบเต็มเวลา",
+    "availability": "พร้อมร่วมงาน",
+    "externalNodes": "ช่องทางภายนอก",
+    "githubLabel": "GitHub",
+    "inquiryEyebrow": "ช่องทางติดต่อ",
+    "inquiryTitle": "ส่งข้อความถึงผม"
+  },
+  "contactForm": {
+    "nameLabel": "ชื่อผู้ติดต่อ",
+    "namePlaceholder": "สมชาย ใจดี",
+    "emailLabel": "อีเมลสำหรับติดต่อกลับ",
+    "emailPlaceholder": "you@example.com",
+    "subjectLabel": "หัวข้อ",
+    "subjectDefault": "พูดคุยเรื่องโปรเจกต์",
+    "subjectOptions": [
+      "พูดคุยเรื่องโปรเจกต์",
+      "ขอรีวิวสถาปัตยกรรม",
+      "สอบถามงาน",
+      "ทักทายทั่วไป"
+    ],
+    "messageLabel": "รายละเอียดข้อความ",
+    "messagePlaceholder": "เล่าเป้าหมายหรือโจทย์ที่ต้องการได้เลย...",
+    "submit": "ส่งข้อความ",
+    "footerNote": "การสื่อสารถูกส่งผ่านอีเมลโดยตรง"
+  }
+}

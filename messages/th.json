@@ -93,6 +93,14 @@
         "image": "",
         "stack": ["Angular", "Node.js", "Express.js", "SQL Server"],
         "demoUrl": "#"
+      },
+      {
+        "title": "CuteBooth",
+        "category": "โปรเจกต์ Vibe Code · 2026",
+        "description": "เว็บแนวออนไลน์โฟโต้บูธที่ทำด้วย Next.js สำหรับถ่ายเล่นแบบสนุก ๆ และใช้งานได้รวดเร็ว",
+        "image": "/certificates/images/cutebooth.png",
+        "stack": ["Next.js", "React", "TypeScript"],
+        "demoUrl": "https://www.cutebooth.app/"
       }
     ]
   },

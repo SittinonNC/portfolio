@@ -93,6 +93,14 @@
         "image": "",
         "stack": ["Angular", "Node.js", "Express.js", "SQL Server"],
         "demoUrl": "#"
+      },
+      {
+        "title": "CuteBooth",
+        "category": "Vibe Code Project · 2026",
+        "description": "An online photobooth-style web app built with Next.js for fun creative shoots and quick photo sessions.",
+        "image": "/certificates/images/cutebooth.png",
+        "stack": ["Next.js", "React", "TypeScript"],
+        "demoUrl": "https://www.cutebooth.app/"
       }
     ]
   },

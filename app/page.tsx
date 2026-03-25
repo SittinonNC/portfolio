@@ -54,7 +54,7 @@ export default async function HomePage() {
         <div className="relative lg:col-span-5 motion-rise-in [animation-delay:120ms]">
           <div className="relative aspect-4/5 overflow-hidden rounded-2xl border border-white/10 bg-[#0d162b]">
             <Image
-              src="/certificates/images/profile.png"
+              src="/certificates/images/profile.PNG"
               alt="Profile visual"
               fill
               className="object-cover "

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import { getI18n } from "@/lib/i18n";
 import { SiteFooter } from "@/components/portfolio/site-footer";
 import { SiteHeader } from "@/components/portfolio/site-header";
 import "./globals.css";
@@ -23,18 +24,28 @@ export const metadata: Metadata = {
   description: "Full-Stack Developer portfolio: Next.js, React, Node.js, enterprise web applications, and modern frontend architecture.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { locale, dict } = await getI18n();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${inter.variable} ${spaceGrotesk.variable} min-h-screen bg-[#0b1326] text-slate-100 antialiased`}>
         <div className="relative min-h-screen bg-[radial-gradient(circle_at_10%_10%,rgba(192,193,255,0.2),transparent_35%),radial-gradient(circle_at_90%_20%,rgba(99,102,241,0.15),transparent_30%),#0b1326]">
-          <SiteHeader />
+          <SiteHeader
+            locale={locale}
+            profileName={dict.profile.name}
+            navItems={dict.header.navItems}
+            contactLabel={dict.header.contactCta}
+            languageLabel={dict.header.languageLabel}
+            englishShort={dict.header.englishShort}
+            thaiShort={dict.header.thaiShort}
+          />
           {children}
-          <SiteFooter />
+          <SiteFooter profileName={dict.profile.name} socialLinks={dict.profile.socialLinks} copyright={dict.footer.copyright} />
         </div>
       </body>
     </html>

@@ -1,0 +1,194 @@
+{
+  "profile": {
+    "name": "Sittinon Tongsua",
+    "role": "Full-Stack Developer",
+    "email": "sittinon.tongsua@gmail.com",
+    "phone": "092-754-5385",
+    "github": "https://github.com/SittinonNC",
+    "location": "Prachinburi, Thailand",
+    "summary": "Full-stack Developer with hands-on industry experience building enterprise-grade web applications. Currently interning at Bluebik Digital, delivering high-value transaction systems with modern frameworks.",
+    "socialLinks": [
+      { "label": "GitHub", "href": "https://github.com/SittinonNC" },
+      { "label": "Email", "href": "mailto:sittinon.tongsua@gmail.com" },
+      { "label": "Phone", "href": "tel:+66927545385" },
+      { "label": "Location", "href": "https://maps.google.com/?q=Prachinburi,Thailand" }
+    ]
+  },
+  "header": {
+    "navItems": [
+      { "label": "Home", "href": "/" },
+      { "label": "Projects", "href": "/projects" },
+      { "label": "Skills", "href": "/skills" },
+      { "label": "Experience", "href": "/skills#experience" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "contactCta": "Contact",
+    "languageLabel": "Language",
+    "englishShort": "EN",
+    "thaiShort": "TH"
+  },
+  "footer": {
+    "copyright": "© 2026 Sittinon Tongsua. Full-Stack Developer · Next.js · React · Node.js"
+  },
+  "home": {
+    "metaTitle": "Home",
+    "availability": "Open to internship and full-time opportunities",
+    "headline": "I'm {name}, a {role} focused on modern web systems.",
+    "viewProjects": "View Projects",
+    "getInTouch": "Get In Touch",
+    "currentFocus": "Current Focus",
+    "stackEyebrow": "Technical Stack",
+    "stackHeading": "Built for performance, maintainability, and clean UX.",
+    "stackDescription": "Hands-on with enterprise feature delivery, API architecture, and robust client-side validation.",
+    "coreSkillsLabel": "01 / CORE SKILLS",
+    "coreSkillsTitle": "Production Web Development",
+    "experienceLabel": "02 / EXPERIENCE",
+    "experiencePeriod": "2025 - Present",
+    "experienceRole": "Developer Intern @ Bluebik Digital",
+    "featuredWork": "Featured Work",
+    "ctaHeading": "Let's build your next product.",
+    "startProject": "Start a Project",
+    "emailMe": "Email Me",
+    "coreStack": [
+      "Next.js 16",
+      "React 19",
+      "Node.js",
+      "TypeScript",
+      "Zustand",
+      "TanStack Query",
+      "Supabase",
+      "Tailwind CSS"
+    ]
+  },
+  "projectsPage": {
+    "metaTitle": "Projects",
+    "metaDescription": "Portfolio projects and internship work by Sittinon Tongsua.",
+    "eyebrow": "Selected Works",
+    "titlePrefix": "PROJECT",
+    "titleHighlight": "HIGHLIGHTS.",
+    "description": "Enterprise internship delivery and personal production projects focused on security, performance, and reusable architecture.",
+    "featuredBadge": "Featured",
+    "viewDemo": "View Demo",
+    "projects": [
+      {
+        "title": "High-Value Transaction System",
+        "category": "Bluebik Digital Internship",
+        "description": "Built core User Management and Admin modules with strict RBAC, delivered 20+ reusable pixel-perfect components from Figma, and optimized global state + API flow with Zustand, TanStack Query, and Axios.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBl3aI6C9a9pkrmS31GimianAWbzgzj9DlyB7U_jtOOdBV56zDQdHzrOQ7bg20bHd8j3RT8B8BFZ8tfZxOcNB_KhlVKS0s63LR81LphtZyhc70ErVkP1dhZB9iUJ2QLURjbV4P7gttvzACFDAyHtj9ZFE-lue5MneZ699H4ma5XUT3e1MY1zbsMUkjxu2BIOOUjY4PTBmveWPl_pWT7LgqbAtQv2hXRgQtBKec5GcYGvngAHBAROQPMq0Ow_HCWizFMXe1ny-FgzBGD",
+        "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "TanStack Query", "Zod"],
+        "demoUrl": "#",
+        "featured": true
+      },
+      {
+        "title": "Tiwgun (ติวกัน)",
+        "category": "Personal Project · 2026",
+        "description": "A bilingual educational document-sharing platform with hybrid encryption (RSA-OAEP + AES-GCM), sub-second TTFB via RSC + caching strategies, and real-time capabilities through Supabase.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAAUzOlrCetqQ3fqy6E7yfVFuKcERMNb3nYJoCa-pht6FrwKM7-yF0rUn3V1Eoncsm9TqOQmRkVULCw2FUYmMxFduPQc20NdwxxwKc9tfuksxXadfjSha0GKrfkssXuYcIggFsAb0nytOfEEQxOGUcuvldTAibFJd_jhEkz82kF-pOPVbXTRfjw8wOXQ487VEAumdaWkHygihKDlluJA_zxWGf0KR35OaPE7vekAt0FCVwdwvx7pS2k-5h9RMkPiliYKpuVzYcs6WiW",
+        "stack": ["Next.js 16", "React 19", "Supabase", "GSAP", "Zustand", "TanStack Query"],
+        "demoUrl": "https://tiwgun.vercel.app/th"
+      },
+      {
+        "title": "E-Commerce Platform & Expense Management System",
+        "category": "Group Project · 2024",
+        "description": "Built a full-stack e-commerce platform in a team of four, including relational database design for users, products, and transactions in an Agile workflow.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCr6qyOjk79nfkAYEI5_-0LOkqwQcXgD827KacEQfGVY1JmMP7mnCg83BlfUUdGdU_pUrGAUF-VuCcboNGciLmHl1dmr4uhGJ-RvYvjjmnLgXguNc-IXR3XizX3A6pyB1FPDaeGhLYoIoXo7QBVf2Fh0u0Vg-quneK2S0hgXZZsHZMKiVi3L3iKXFNh1tUqsDJyyb4nUx8ObWdRnKTXqzF16ZJ_k7hZi5VZxcEk5WDUsJyilEdi7C6hnGD1mzCa66az58R6_qnOY-fk",
+        "stack": ["Angular", "Node.js", "Express.js", "SQL Server"],
+        "demoUrl": "#"
+      }
+    ]
+  },
+  "skillsPage": {
+    "metaTitle": "Skills & Experience",
+    "metaDescription": "Technical depth, tooling, and career timeline.",
+    "title": "Technical {highlight} & History",
+    "titleHighlight": "Mastery",
+    "description": "Strong foundation in production-grade frontend and backend development with focus on performance, security, and clean code.",
+    "coreEngineering": "Core Engineering",
+    "toolingPlatforms": "Tooling & Platforms",
+    "education": "Education",
+    "educationPeriod": "2022 - Expected 2026",
+    "educationDegree": "B.Sc. Information Technology",
+    "educationSchool": "Kasetsart University, Sriracha Campus",
+    "educationGpa": "GPAX 3.49 / 4.00 (Second-Class Honours)",
+    "awardsTitle": "Awards & Certifications",
+    "awards": [
+      "Excellent Presentation Award (Oral) · AUCC2025",
+      "Data Engineering with Microsoft Azure · 2024",
+      "ICDL: Application Essentials · 2024",
+      "Web Application Development: React (DAT) · 2023"
+    ],
+    "experienceTitle": "Experience",
+    "ctaHeading": "Ready to build something scalable together?",
+    "viewGithub": "View GitHub",
+    "contactMe": "Contact Me",
+    "skillRows": [
+      { "label": "Next.js / React", "value": 93 },
+      { "label": "TypeScript / Node.js", "value": 90 },
+      { "label": "State + Query (Zustand / TanStack)", "value": 88 },
+      { "label": "Validation + API Design (Zod / Axios)", "value": 87 }
+    ],
+    "tooling": ["Shadcn UI", "GSAP", "Supabase", "SQL Server", "Git/GitHub", "Postman", "Azure", "Power BI"],
+    "experiences": [
+      {
+        "year": "Jan 2025 — Present",
+        "role": "Developer Intern",
+        "company": "Bluebik Digital Company Limited",
+        "points": [
+          "Built User Management and Admin modules with strict Role-Based Access Control according to SA documentation and team coding standards.",
+          "Engineered 20+ reusable, pixel-perfect UI components from Figma with Next.js, Tailwind CSS, and Shadcn UI.",
+          "Managed global state with Zustand and optimized data fetching/caching via TanStack Query + Axios.",
+          "Implemented client-side validation with Zod to prevent malformed payloads reaching backend services."
+        ]
+      },
+      {
+        "year": "2026",
+        "role": "Personal Project",
+        "company": "Tiwgun (ติวกัน)",
+        "points": [
+          "Developed bilingual (EN/TH) educational platform with secure material sharing and discovery.",
+          "Implemented hybrid encryption (RSA-OAEP + AES-GCM) using Web Crypto API for enterprise-grade API security.",
+          "Achieved sub-second TTFB through React Server Components, granular caching strategies, and TanStack Query."
+        ]
+      },
+      {
+        "year": "2024",
+        "role": "Group Project (Team of 4)",
+        "company": "E-Commerce Platform & Expense Management System",
+        "points": [
+          "Developed full-stack e-commerce platform with Angular, Node.js, Express.js, and SQL Server.",
+          "Designed relational database schema for users, products, and transactions in Agile delivery cycles."
+        ]
+      }
+    ]
+  },
+  "contactPage": {
+    "metaTitle": "Contact",
+    "metaDescription": "Contact form and social channels for collaborations.",
+    "title": "Let's Build Your {highlight} Product.",
+    "titleHighlight": "Next",
+    "description": "Open for collaborations, internships, and full-time software engineering opportunities.",
+    "availability": "Available for work",
+    "externalNodes": "External Nodes",
+    "githubLabel": "GitHub",
+    "inquiryEyebrow": "Inquiry Terminal",
+    "inquiryTitle": "Transmission Protocol"
+  },
+  "contactForm": {
+    "nameLabel": "Identification (Name)",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Network Address (Email)",
+    "emailPlaceholder": "john@example.com",
+    "subjectLabel": "Packet Header (Subject)",
+    "subjectDefault": "Project Collaboration",
+    "subjectOptions": [
+      "Project Collaboration",
+      "Architecture Review",
+      "Hiring Inquiry",
+      "General Hello"
+    ],
+    "messageLabel": "Data Payload (Message)",
+    "messagePlaceholder": "Define the objective...",
+    "submit": "Execute Send",
+    "footerNote": "Encrypted end-to-end communication via global node network."
+  }
+}

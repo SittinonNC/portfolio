@@ -2,26 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Chip } from "@heroui/react";
-import { projects } from "@/components/portfolio/data";
+import { getI18n } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Projects",
   description: "Portfolio projects and internship work by Sittinon Tongsua.",
 };
 
-export default function ProjectsPage() {
-  const [featured, secondary] = [projects.find((project) => project.featured), projects.filter((project) => !project.featured)];
+export default async function ProjectsPage() {
+  const { dict } = await getI18n();
+  const [featured, secondary] = [
+    dict.projectsPage.projects.find((project) => project.featured),
+    dict.projectsPage.projects.filter((project) => !project.featured),
+  ];
 
   return (
     <main className="mx-auto w-full max-w-7xl px-6 pb-24 pt-14 lg:px-8">
       <header className="mb-16 space-y-5">
-        <p className="text-xs uppercase tracking-[0.25em] text-indigo-300">Selected Works</p>
+        <p className="text-xs uppercase tracking-[0.25em] text-indigo-300">{dict.projectsPage.eyebrow}</p>
         <h1 className="font-headline text-5xl font-bold tracking-tight text-slate-100 md:text-7xl">
-          PROJECT <span className="text-indigo-300">HIGHLIGHTS.</span>
+          {dict.projectsPage.titlePrefix} <span className="text-indigo-300">{dict.projectsPage.titleHighlight}</span>
         </h1>
-        <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
-          Enterprise internship delivery and personal production projects focused on security, performance, and reusable architecture.
-        </p>
+        <p className="max-w-2xl text-lg leading-relaxed text-slate-300">{dict.projectsPage.description}</p>
       </header>
 
       {featured && (
@@ -33,7 +35,7 @@ export default function ProjectsPage() {
             <div className="flex flex-wrap items-center justify-between gap-3">
               <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">{featured.category}</p>
               <Chip color="accent" variant="primary" size="sm">
-                Featured
+                {dict.projectsPage.featuredBadge}
               </Chip>
             </div>
             <h2 className="font-headline text-3xl font-semibold text-slate-100 md:text-4xl">{featured.title}</h2>
@@ -72,7 +74,7 @@ export default function ProjectsPage() {
                 target={project.demoUrl.startsWith("http") ? "_blank" : undefined}
                 rel={project.demoUrl.startsWith("http") ? "noreferrer" : undefined}
               >
-                View Demo
+                {dict.projectsPage.viewDemo}
               </Link>
             </div>
           </article>

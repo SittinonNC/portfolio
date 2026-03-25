@@ -2,25 +2,15 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Chip } from "@heroui/react";
-import { profile, projects } from "@/components/portfolio/data";
+import { formatMessage, getI18n } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Home",
 };
 
-const coreStack = [
-  "Next.js 16",
-  "React 19",
-  "Node.js",
-  "TypeScript",
-  "Zustand",
-  "TanStack Query",
-  "Supabase",
-  "Tailwind CSS",
-];
-
-export default function HomePage() {
-  const highlightedProjects = projects.slice(0, 2);
+export default async function HomePage() {
+  const { dict } = await getI18n();
+  const highlightedProjects = dict.projectsPage.projects.slice(0, 2);
 
   return (
     <main>
@@ -28,17 +18,22 @@ export default function HomePage() {
         <div className="space-y-7 lg:col-span-7 motion-rise-in">
           <div className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-[#1a2440]/80 px-3 py-1">
             <span className="h-2 w-2 animate-pulse rounded-full bg-indigo-300" />
-            <span className="text-xs uppercase tracking-[0.2em] text-indigo-200">Open to internship and full-time opportunities</span>
+            <span className="text-xs uppercase tracking-[0.2em] text-indigo-200">{dict.home.availability}</span>
           </div>
 
           <h1 className="font-headline text-5xl font-bold leading-[0.95] tracking-tight text-slate-100 md:text-7xl">
-            I&apos;m <span className="text-indigo-300">{profile.name}</span>, a {profile.role} focused on modern web systems.
+            {formatMessage(dict.home.headline, { name: dict.profile.name, role: dict.profile.role }).split(dict.profile.name).map((part, index, arr) => (
+              <span key={`${part}-${index}`}>
+                {part}
+                {index < arr.length - 1 ? <span className="text-indigo-300">{dict.profile.name}</span> : null}
+              </span>
+            ))}
           </h1>
 
-          <p className="max-w-2xl text-lg leading-relaxed text-slate-300 md:text-xl">{profile.summary}</p>
+          <p className="max-w-2xl text-lg leading-relaxed text-slate-300 md:text-xl">{dict.profile.summary}</p>
 
           <p className="text-sm text-slate-400">
-            {profile.email} · {profile.phone} · {profile.location}
+            {dict.profile.email} · {dict.profile.phone} · {dict.profile.location}
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -46,13 +41,13 @@ export default function HomePage() {
               href="/projects"
               className="rounded-full bg-indigo-200 px-5 py-2.5 font-headline font-semibold text-indigo-950 transition hover:bg-indigo-100"
             >
-              View Projects
+              {dict.home.viewProjects}
             </Link>
             <Link
               href="/contact"
               className="rounded-full border border-white/20 px-5 py-2.5 font-headline font-semibold text-indigo-100 transition hover:bg-white/5"
             >
-              Get In Touch
+              {dict.home.getInTouch}
             </Link>
           </div>
         </div>
@@ -68,7 +63,7 @@ export default function HomePage() {
               priority
             />
             <div className="absolute inset-x-5 bottom-5 rounded-xl border border-white/10 bg-slate-950/65 p-4 backdrop-blur-lg">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-slate-400">Current Focus</p>
+              <p className="text-[10px] uppercase tracking-[0.2em] text-slate-400">{dict.home.currentFocus}</p>
               <div className="mt-3 space-y-2">
                 <div className="h-1 w-full rounded-full bg-indigo-300/20" />
                 <div className="h-1 w-3/4 rounded-full bg-indigo-300/35" />
@@ -83,18 +78,18 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
           <div className="mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">Technical Stack</p>
-              <h2 className="mt-3 font-headline text-4xl font-semibold tracking-tight text-slate-100">Built for performance, maintainability, and clean UX.</h2>
+              <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">{dict.home.stackEyebrow}</p>
+              <h2 className="mt-3 font-headline text-4xl font-semibold tracking-tight text-slate-100">{dict.home.stackHeading}</h2>
             </div>
-            <p className="max-w-md text-slate-300">Hands-on with enterprise feature delivery, API architecture, and robust client-side validation.</p>
+            <p className="max-w-md text-slate-300">{dict.home.stackDescription}</p>
           </div>
 
           <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
             <article className="rounded-2xl border border-white/10 bg-[#1a2440] p-7 md:col-span-2">
-              <p className="mb-4 text-xs uppercase tracking-[0.2em] text-slate-400">01 / CORE SKILLS</p>
-              <h3 className="font-headline text-3xl font-semibold text-slate-100">Production Web Development</h3>
+              <p className="mb-4 text-xs uppercase tracking-[0.2em] text-slate-400">{dict.home.coreSkillsLabel}</p>
+              <h3 className="font-headline text-3xl font-semibold text-slate-100">{dict.home.coreSkillsTitle}</h3>
               <div className="mt-5 flex flex-wrap gap-2">
-                {coreStack.map((item) => (
+                {dict.home.coreStack.map((item) => (
                   <Chip key={item} variant="soft" className="bg-[#0c1325] text-slate-200">
                     {item}
                   </Chip>
@@ -103,9 +98,9 @@ export default function HomePage() {
             </article>
 
             <article className="rounded-2xl bg-indigo-300 p-7 text-indigo-950">
-              <p className="text-xs uppercase tracking-[0.2em]">02 / EXPERIENCE</p>
-              <p className="mt-8 font-headline text-4xl font-bold">2025 - Present</p>
-              <p className="mt-1 font-headline text-xl font-semibold">Developer Intern @ Bluebik Digital</p>
+              <p className="text-xs uppercase tracking-[0.2em]">{dict.home.experienceLabel}</p>
+              <p className="mt-8 font-headline text-4xl font-bold">{dict.home.experiencePeriod}</p>
+              <p className="mt-1 font-headline text-xl font-semibold">{dict.home.experienceRole}</p>
             </article>
           </div>
         </div>
@@ -113,7 +108,7 @@ export default function HomePage() {
 
       <section className="mx-auto w-full max-w-7xl px-6 py-20 lg:px-8">
         <div className="mb-10 flex items-center gap-3">
-          <h2 className="font-headline text-3xl font-semibold text-slate-100">Featured Work</h2>
+          <h2 className="font-headline text-3xl font-semibold text-slate-100">{dict.home.featuredWork}</h2>
           <div className="h-px flex-1 bg-white/10" />
         </div>
 
@@ -139,16 +134,16 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto mb-20 w-full max-w-4xl rounded-3xl bg-indigo-200 p-10 text-center md:p-16">
-        <h2 className="font-headline text-4xl font-bold tracking-tight text-indigo-900 md:text-6xl">Let&apos;s build your next product.</h2>
+        <h2 className="font-headline text-4xl font-bold tracking-tight text-indigo-900 md:text-6xl">{dict.home.ctaHeading}</h2>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link href="/contact" className="rounded-full bg-indigo-700 px-6 py-2.5 font-headline font-semibold text-white transition hover:bg-indigo-800">
-            Start a Project
+            {dict.home.startProject}
           </Link>
           <Link
-            href={`mailto:${profile.email}`}
+            href={`mailto:${dict.profile.email}`}
             className="rounded-full border border-indigo-500 px-6 py-2.5 font-headline font-semibold text-indigo-800 transition hover:bg-indigo-100/60"
           >
-            Email Me
+            {dict.home.emailMe}
           </Link>
         </div>
       </section>

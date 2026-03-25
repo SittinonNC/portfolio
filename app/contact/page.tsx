@@ -2,25 +2,30 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ContactForm } from "@/components/portfolio/contact-form";
-import { profile, socialLinks } from "@/components/portfolio/data";
+import { formatMessage, getI18n } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Contact",
   description: "Contact form and social channels for collaborations.",
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const { dict } = await getI18n();
+
   return (
     <main className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-6 pb-20 pt-14 lg:grid-cols-12 lg:px-8">
       <header className="lg:col-span-12">
         <h1 className="font-headline text-5xl font-bold tracking-tight text-slate-100 md:text-7xl">
-          Let&apos;s Build Your <span className="text-indigo-300">Next</span> Product.
+          {formatMessage(dict.contactPage.title, { highlight: dict.contactPage.titleHighlight }).split(dict.contactPage.titleHighlight).map((part, index, arr) => (
+            <span key={`${part}-${index}`}>
+              {part}
+              {index < arr.length - 1 ? <span className="text-indigo-300">{dict.contactPage.titleHighlight}</span> : null}
+            </span>
+          ))}
         </h1>
-        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-          Open for collaborations, internships, and full-time software engineering opportunities.
-        </p>
+        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">{dict.contactPage.description}</p>
         <p className="mt-3 text-slate-400">
-          {profile.email} · {profile.phone} · {profile.location}
+          {dict.profile.email} · {dict.profile.phone} · {dict.profile.location}
         </p>
       </header>
 
@@ -37,14 +42,14 @@ export default function ContactPage() {
             />
           </div>
           <div className="absolute bottom-5 left-5 rounded-full border border-indigo-200/30 bg-indigo-200/20 px-4 py-1 text-xs uppercase tracking-[0.2em] text-indigo-100">
-            Available for work
+            {dict.contactPage.availability}
           </div>
         </article>
 
         <article className="rounded-2xl border border-white/10 bg-[#131e35] p-6">
-          <h2 className="mb-4 font-headline text-xl font-semibold text-slate-100">External Nodes</h2>
+          <h2 className="mb-4 font-headline text-xl font-semibold text-slate-100">{dict.contactPage.externalNodes}</h2>
           <ul className="space-y-3">
-            {socialLinks.map((item) => (
+            {dict.profile.socialLinks.map((item) => (
               <li key={item.label}>
                 <Link
                   href={item.href}
@@ -59,7 +64,7 @@ export default function ContactPage() {
           </ul>
 
           <div className="mt-5 rounded-xl bg-slate-950/50 p-4 text-sm text-slate-300">
-            <p className="font-semibold text-slate-100">GitHub</p>
+            <p className="font-semibold text-slate-100">{dict.contactPage.githubLabel}</p>
             <p className="mt-1 break-all">github.com/SittinonNC</p>
           </div>
         </article>
@@ -67,10 +72,10 @@ export default function ContactPage() {
 
       <section className="rounded-2xl border border-white/10 bg-[#1a2440] p-6 md:p-8 lg:col-span-7">
         <div className="mb-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">Inquiry Terminal</p>
-          <h2 className="mt-2 font-headline text-3xl font-semibold text-slate-100">Transmission Protocol</h2>
+          <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">{dict.contactPage.inquiryEyebrow}</p>
+          <h2 className="mt-2 font-headline text-3xl font-semibold text-slate-100">{dict.contactPage.inquiryTitle}</h2>
         </div>
-        <ContactForm />
+        <ContactForm emailTo={dict.profile.email} labels={dict.contactForm} />
       </section>
     </main>
   );

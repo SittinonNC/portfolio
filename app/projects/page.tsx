@@ -28,9 +28,15 @@ export default async function ProjectsPage() {
 
       {featured && (
         <article className="mb-6 overflow-hidden rounded-2xl border border-white/10 bg-[#111a30] shadow-[0_20px_40px_rgba(192,193,255,0.08)]">
-          <div className="relative aspect-[16/8] w-full overflow-hidden">
-            <Image src={featured.image} alt={featured.title} fill sizes="(max-width: 768px) 100vw, 70vw" className="object-cover" priority />
-          </div>
+          {featured.image ? (
+            <div className="relative aspect-16/8 w-full overflow-hidden">
+              <Image src={featured.image} alt={featured.title} fill sizes="(max-width: 768px) 100vw, 70vw" className="object-cover" priority />
+            </div>
+          ) : (
+            <div className="flex aspect-16/8 w-full items-center justify-center bg-[#0d162b] px-6 text-center text-sm uppercase tracking-[0.2em] text-slate-400">
+              {dict.projectsPage.imageUnavailable}
+            </div>
+          )}
           <div className="space-y-5 p-7 md:p-10">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">{featured.category}</p>
@@ -54,9 +60,15 @@ export default async function ProjectsPage() {
       <section className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {secondary.map((project) => (
           <article key={project.title} className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#111a30]">
-            <div className="relative aspect-video w-full overflow-hidden">
-              <Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
-            </div>
+            {project.image ? (
+              <div className="relative aspect-video w-full overflow-hidden">
+                <Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+              </div>
+            ) : (
+              <div className="flex aspect-video w-full items-center justify-center bg-[#0d162b] px-4 text-center text-xs uppercase tracking-[0.2em] text-slate-400">
+                {dict.projectsPage.imageUnavailable}
+              </div>
+            )}
             <div className="flex flex-1 flex-col gap-4 p-6">
               <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">{project.category}</p>
               <h3 className="font-headline text-2xl font-semibold text-slate-100">{project.title}</h3>

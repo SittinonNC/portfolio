@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Chip } from "@heroui/react";
+import { CertificatesSection } from "@/components/portfolio/certificates-section";
 import { formatMessage, getI18n } from "@/lib/i18n";
 
 export const metadata: Metadata = {
@@ -74,6 +75,15 @@ export default async function SkillsPage() {
         </article>
       </section>
 
+      <CertificatesSection
+        title={dict.skillsPage.certificatesTitle}
+        viewCredentialLabel={dict.skillsPage.viewCredential}
+        closeLabel={dict.skillsPage.closePreview}
+        openInNewTabLabel={dict.skillsPage.openInNewTab}
+        unsupportedPreviewLabel={dict.skillsPage.unsupportedPreview}
+        certificates={dict.skillsPage.certificates}
+      />
+
       <section id="experience" className="mt-20 space-y-8">
         <h2 className="font-headline text-4xl font-bold tracking-tight text-slate-100">{dict.skillsPage.experienceTitle}</h2>
         <div className="space-y-6">
@@ -98,6 +108,13 @@ export default async function SkillsPage() {
           <Link href={dict.profile.github} target="_blank" rel="noreferrer" className="rounded-xl bg-indigo-700 px-4 py-2 text-sm font-semibold text-white">
             {dict.skillsPage.viewGithub}
           </Link>
+          <a
+            href="/certificates/pdfs/Resume.pdf"
+            download
+            className="rounded-xl bg-indigo-900 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-950"
+          >
+            {dict.skillsPage.downloadResume}
+          </a>
           <Link href={`mailto:${dict.profile.email}`} className="rounded-xl border border-indigo-700 px-4 py-2 text-sm font-semibold text-indigo-800">
             {dict.skillsPage.contactMe}
           </Link>

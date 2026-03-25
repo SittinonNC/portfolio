@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default async function HomePage() {
   const { dict } = await getI18n();
   const highlightedProjects = dict.projectsPage.projects.slice(0, 2);
+  const profileMeta = [dict.profile.email, dict.profile.phone].filter(Boolean).join(" · ");
 
   return (
     <main>
@@ -32,9 +33,7 @@ export default async function HomePage() {
 
           <p className="max-w-2xl text-lg leading-relaxed text-slate-300 md:text-xl">{dict.profile.summary}</p>
 
-          <p className="text-sm text-slate-400">
-            {dict.profile.email} · {dict.profile.phone} · {dict.profile.location}
-          </p>
+          <p className="text-sm text-slate-400">{profileMeta}</p>
 
           <div className="flex flex-wrap gap-3">
             <Link
@@ -53,12 +52,12 @@ export default async function HomePage() {
         </div>
 
         <div className="relative lg:col-span-5 motion-rise-in [animation-delay:120ms]">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 bg-[#0d162b]">
+          <div className="relative aspect-4/5 overflow-hidden rounded-2xl border border-white/10 bg-[#0d162b]">
             <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrc8o78Rn7hWfzixG00ctsi9mHKe7CN3vuEhW0HZUc6KiZnlQE7PK4AfXVoavcXe1z6bz_AgaCM6ING_ty8nIOELRGYiZ49tAHxgE929HOfNfZMKn_qKUa8Wly4z4OiaLjUgQZDYEbeidocympKNfWak7fQGSe118sTbvGtRoFKQJtaOBuEN-WcV8RjSdD3vSHjLM0v4WyL5vUY3h6UEWgJnlFHy1ptV8WGXGAYn4UqWHPjjS2rNhkIU2Aqjx64P6JcuAhzOV7EmdB"
+              src="/certificates/images/profile.png"
               alt="Profile visual"
               fill
-              className="object-cover grayscale"
+              className="object-cover "
               sizes="(max-width: 1024px) 100vw, 40vw"
               priority
             />
@@ -115,15 +114,21 @@ export default async function HomePage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {highlightedProjects.map((project) => (
             <article key={project.title} className="group overflow-hidden rounded-2xl border border-white/10 bg-[#111a30]">
-              <div className="relative aspect-video w-full overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover opacity-75 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+              {project.image ? (
+                <div className="relative aspect-video w-full overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover opacity-75 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              ) : (
+                <div className="flex aspect-video w-full items-center justify-center bg-[#0d162b] px-4 text-center text-xs uppercase tracking-[0.2em] text-slate-400">
+                  {dict.projectsPage.imageUnavailable}
+                </div>
+              )}
               <div className="p-6">
                 <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">{project.category}</p>
                 <h3 className="mt-2 font-headline text-3xl font-semibold text-slate-100">{project.title}</h3>

@@ -10,7 +10,6 @@ export const profile = {
   email: "sittinon.tongsua@gmail.com",
   phone: "092-754-5385",
   github: "https://github.com/SittinonNC",
-  location: "Prachinburi, Thailand",
   summary:
     "Full-stack Developer with hands-on industry experience building enterprise-grade web applications. Currently interning at Bluebik Digital, delivering high-value transaction systems with modern frameworks.",
 };
@@ -70,5 +69,4 @@ export const socialLinks = [
   { label: "GitHub", href: "https://github.com/SittinonNC" },
   { label: "Email", href: "mailto:sittinon.tongsua@gmail.com" },
   { label: "Phone", href: "tel:+66927545385" },
-  { label: "Location", href: "https://maps.google.com/?q=Prachinburi,Thailand" },
 ];

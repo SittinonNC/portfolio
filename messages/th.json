@@ -5,13 +5,11 @@
     "email": "sittinon.tongsua@gmail.com",
     "phone": "092-754-5385",
     "github": "https://github.com/SittinonNC",
-    "location": "ปราจีนบุรี, ประเทศไทย",
     "summary": "นักพัฒนา Full-stack ที่มีประสบการณ์จริงในการสร้างเว็บแอปพลิเคชันระดับองค์กร ปัจจุบันฝึกงานที่ Bluebik Digital และพัฒนาระบบธุรกรรมมูลค่าสูงด้วยเฟรมเวิร์กสมัยใหม่",
     "socialLinks": [
       { "label": "GitHub", "href": "https://github.com/SittinonNC" },
       { "label": "อีเมล", "href": "mailto:sittinon.tongsua@gmail.com" },
-      { "label": "โทรศัพท์", "href": "tel:+66927545385" },
-      { "label": "ที่อยู่", "href": "https://maps.google.com/?q=Prachinburi,Thailand" }
+      { "label": "โทรศัพท์", "href": "tel:+66927545385" }
     ]
   },
   "header": {
@@ -68,13 +66,14 @@
     "titleHighlight": "ที่น่าสนใจ",
     "description": "ผลงานจากการฝึกงานองค์กรและโปรเจกต์ส่วนตัวที่เน้นความปลอดภัย ประสิทธิภาพ และสถาปัตยกรรมที่นำกลับใช้ซ้ำได้",
     "featuredBadge": "ผลงานเด่น",
+    "imageUnavailable": "ไม่สามารถแสดงรูปภาพได้เนื่องจากข้อมูลเป็นความลับ",
     "viewDemo": "ดูเดโม",
     "projects": [
       {
         "title": "ระบบธุรกรรมมูลค่าสูง",
         "category": "ฝึกงานที่ Bluebik Digital",
         "description": "พัฒนาโมดูล User Management และ Admin พร้อม RBAC อย่างเข้มงวด สร้างคอมโพเนนต์จาก Figma มากกว่า 20 รายการ และปรับปรุง state/API flow ด้วย Zustand, TanStack Query และ Axios",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBl3aI6C9a9pkrmS31GimianAWbzgzj9DlyB7U_jtOOdBV56zDQdHzrOQ7bg20bHd8j3RT8B8BFZ8tfZxOcNB_KhlVKS0s63LR81LphtZyhc70ErVkP1dhZB9iUJ2QLURjbV4P7gttvzACFDAyHtj9ZFE-lue5MneZ699H4ma5XUT3e1MY1zbsMUkjxu2BIOOUjY4PTBmveWPl_pWT7LgqbAtQv2hXRgQtBKec5GcYGvngAHBAROQPMq0Ow_HCWizFMXe1ny-FgzBGD",
+        "image": "",
         "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "TanStack Query", "Zod"],
         "demoUrl": "#",
         "featured": true
@@ -91,7 +90,7 @@
         "title": "แพลตฟอร์ม E-Commerce และระบบจัดการรายรับรายจ่าย",
         "category": "โปรเจกต์กลุ่ม · 2024",
         "description": "พัฒนาระบบ E-Commerce แบบ Full-stack ร่วมทีม 4 คน รวมถึงออกแบบฐานข้อมูลเชิงสัมพันธ์สำหรับผู้ใช้ สินค้า และธุรกรรม ภายใต้กระบวนการ Agile",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCr6qyOjk79nfkAYEI5_-0LOkqwQcXgD827KacEQfGVY1JmMP7mnCg83BlfUUdGdU_pUrGAUF-VuCcboNGciLmHl1dmr4uhGJ-RvYvjjmnLgXguNc-IXR3XizX3A6pyB1FPDaeGhLYoIoXo7QBVf2Fh0u0Vg-quneK2S0hgXZZsHZMKiVi3L3iKXFNh1tUqsDJyyb4nUx8ObWdRnKTXqzF16ZJ_k7hZi5VZxcEk5WDUsJyilEdi7C6hnGD1mzCa66az58R6_qnOY-fk",
+        "image": "",
         "stack": ["Angular", "Node.js", "Express.js", "SQL Server"],
         "demoUrl": "#"
       }
@@ -111,15 +110,65 @@
     "educationSchool": "มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา",
     "educationGpa": "GPAX 3.49 / 4.00 (เกียรตินิยมอันดับสอง)",
     "awardsTitle": "รางวัลและใบรับรอง",
+    "certificatesTitle": "ใบรับรอง (Certificates)",
+    "viewCredential": "ดูใบรับรอง",
+    "closePreview": "ปิด",
+    "openInNewTab": "เปิดในแท็บใหม่",
+    "unsupportedPreview": "ไฟล์ประเภทนี้ไม่รองรับการพรีวิวในโมดอล",
     "awards": [
       "Excellent Presentation Award (Oral) · AUCC2025",
       "Data Engineering with Microsoft Azure · 2024",
       "ICDL: Application Essentials · 2024",
       "Web Application Development: React (DAT) · 2023"
     ],
+    "certificates": [
+      {
+        "name": "Data Engineering with Microsoft Azure",
+        "issuer": "Microsoft / Partner Program",
+        "year": "2024",
+        "credentialUrl": "/certificates/pdfs/microsoft-azure.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "Certificate of Academic Excellence (Academic Year 2024)",
+        "issuer": "Kasetsart University Sriracha Campus",
+        "year": "2024",
+        "credentialUrl": "/certificates/pdfs/academic-year-2024.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "ICDL: Application Essentials",
+        "issuer": "ICDL Thailand",
+        "year": "2024",
+        "credentialUrl": "/certificates/pdfs/icdl.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "Web Application Development: React (DAT)",
+        "issuer": "DAT Program",
+        "year": "2023",
+        "credentialUrl": "/certificates/pdfs/react-dat.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "Excellent Presentation Award (Oral Presentation) AUCC2025",
+        "issuer": "The Asia Undergraduate Conference on Computing (AUCC) & Uttaradit Rajabhat University",
+        "year": "2025",
+        "credentialUrl": "/certificates/pdfs/aucc-award-certificate.pdf",
+        "credentialType": "pdf"
+      },
+      {
+        "name": "Certificate of Academic Excellence (Academic Year 2023)",
+        "issuer": "Kasetsart University Sriracha Campus",
+        "year": "2023",
+        "credentialUrl": "/certificates/pdfs/academic-year-2023.pdf",
+        "credentialType": "pdf"
+      }
+    ],
     "experienceTitle": "ประสบการณ์",
     "ctaHeading": "พร้อมสร้างระบบที่ขยายต่อได้ไปด้วยกันไหม?",
     "viewGithub": "ดู GitHub",
+    "downloadResume": "ดาวน์โหลด Resume",
     "contactMe": "ติดต่อผม",
     "skillRows": [
       { "label": "Next.js / React", "value": 93 },

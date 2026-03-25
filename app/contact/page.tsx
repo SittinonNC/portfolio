@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 export default async function ContactPage() {
   const { dict } = await getI18n();
+  const profileMeta = [dict.profile.email, dict.profile.phone].filter(Boolean).join(" · ");
 
   return (
     <main className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-6 pb-20 pt-14 lg:grid-cols-12 lg:px-8">
@@ -24,9 +25,7 @@ export default async function ContactPage() {
           ))}
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">{dict.contactPage.description}</p>
-        <p className="mt-3 text-slate-400">
-          {dict.profile.email} · {dict.profile.phone} · {dict.profile.location}
-        </p>
+        <p className="mt-3 text-slate-400">{profileMeta}</p>
       </header>
 
       <section className="space-y-5 lg:col-span-5">

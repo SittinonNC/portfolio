@@ -12,7 +12,7 @@ export default async function HomePage() {
   const { dict } = await getI18n();
   const highlightedProjects = dict.projectsPage.projects.slice(0, 2);
   const profileMeta = [dict.profile.email, dict.profile.phone].filter(Boolean).join(" · ");
-  const profileImage = dict.profile.image || "/certificates/images/profile.png";
+  const profileImage = dict.profile.image || "/certificates/images/profile.png" || "https://scontent.fbkk12-4.fna.fbcdn.net/v/t39.30808-6/439867237_1840116639751910_7768835124002691640_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEK8k06hf14U_2g5voVbfcOZin7LWJ58opmKfstYnnyikOnfD5fM0Q08h307W7da_A2hCptus4lLxsnl9I5Hb4W&_nc_ohc=J3rVjltBuq4Q7kNvwFBbKP-&_nc_oc=AdqvD6HBxV_aMtUgeVbklOUXHsMi9K-KIYNOGrKI52gJ9Tm6Jg-gmWd0v2GpFUe0imyyNkcYaSBal7wozjskz3ky&_nc_zt=23&_nc_ht=scontent.fbkk12-4.fna&_nc_gid=Zq5rZKYofsf9IRLem6iUWA&_nc_ss=7a32e&oh=00_AfypGNDBxECKlELiG6-oFtipXkYK-cm0yg8ZGHfjpEpIQA&oe=69CA1AA4";
 
   return (
     <main>

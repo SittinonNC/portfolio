@@ -83,7 +83,7 @@
         "title": "Tiwgun (ติวกัน)",
         "category": "โปรเจกต์ส่วนตัว · 2026",
         "description": "แพลตฟอร์มแบ่งปันเอกสารการเรียนรู้สองภาษา (ไทย/อังกฤษ) ใช้ hybrid encryption (RSA-OAEP + AES-GCM) รองรับ TTFB ต่ำกว่าหนึ่งวินาทีด้วย RSC + caching และมีความสามารถแบบเรียลไทม์ผ่าน Supabase",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAAUzOlrCetqQ3fqy6E7yfVFuKcERMNb3nYJoCa-pht6FrwKM7-yF0rUn3V1Eoncsm9TqOQmRkVULCw2FUYmMxFduPQc20NdwxxwKc9tfuksxXadfjSha0GKrfkssXuYcIggFsAb0nytOfEEQxOGUcuvldTAibFJd_jhEkz82kF-pOPVbXTRfjw8wOXQ487VEAumdaWkHygihKDlluJA_zxWGf0KR35OaPE7vekAt0FCVwdwvx7pS2k-5h9RMkPiliYKpuVzYcs6WiW",
+        "image": "/certificates/images/tiwgun.png",
         "stack": ["Next.js 16", "React 19", "Supabase", "GSAP", "Zustand", "TanStack Query"],
         "demoUrl": "https://tiwgun.vercel.app/th"
       },

@@ -65,13 +65,13 @@ export function CertificatesSection({
 
   return (
     <>
-      <section className="mt-10 rounded-2xl border border-white/10 bg-[#131e35] p-7">
-        <h3 className="mb-6 font-headline text-2xl font-semibold text-slate-100">{title}</h3>
+      <section className="mt-10 rounded-2xl border border-white/10 bg-[#131e35] p-5 sm:p-7">
+        <h3 className="mb-6 font-headline text-xl font-semibold text-slate-100 sm:text-2xl">{title}</h3>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {certificates.map((certificate) => (
-            <article key={`${certificate.name}-${certificate.issuer}`} className="rounded-xl border border-white/10 bg-[#0f172a]/70 p-5">
-              <p className="font-headline text-xl font-semibold text-slate-100">{certificate.name}</p>
+            <article key={`${certificate.name}-${certificate.issuer}`} className="rounded-xl border border-white/10 bg-[#0f172a]/70 p-4 sm:p-5">
+              <p className="font-headline text-lg font-semibold text-slate-100 sm:text-xl">{certificate.name}</p>
               <p className="mt-2 text-slate-300">{certificate.issuer}</p>
 
               <div className="mt-4 flex items-center justify-between gap-3">
@@ -95,7 +95,7 @@ export function CertificatesSection({
       </section>
 
       {activeCertificate?.credentialUrl ? (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 p-4" role="dialog" aria-modal="true" aria-label={activeCertificate.name}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 p-2 sm:p-4" role="dialog" aria-modal="true" aria-label={activeCertificate.name}>
           <button
             type="button"
             className="absolute inset-0 h-full w-full cursor-default"
@@ -104,9 +104,9 @@ export function CertificatesSection({
           />
 
           <div className="relative z-10 w-full max-w-5xl overflow-hidden rounded-2xl border border-white/10 bg-[#111a30] shadow-2xl">
-            <div className="flex items-center justify-between border-b border-white/10 px-5 py-3">
-              <p className="pr-4 font-headline text-lg font-semibold text-slate-100">{activeCertificate.name}</p>
-              <div className="flex items-center gap-4">
+            <div className="flex flex-col gap-3 border-b border-white/10 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-5">
+              <p className="pr-0 font-headline text-base font-semibold text-slate-100 sm:pr-4 sm:text-lg">{activeCertificate.name}</p>
+              <div className="flex items-center gap-3 self-end sm:gap-4">
                 <a
                   href={activeCertificate.credentialUrl}
                   target="_blank"
@@ -125,7 +125,7 @@ export function CertificatesSection({
               </div>
             </div>
 
-            <div className="h-[70vh] bg-[#0b1224]">
+            <div className="h-[75vh] bg-[#0b1224] sm:h-[70vh]">
               {activeType === "image" ? (
                 <div className="relative h-full w-full">
                   <Image src={activeCertificate.credentialUrl} alt={activeCertificate.name} fill className="object-contain" unoptimized />

@@ -33,7 +33,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} min-h-screen bg-[#0b1326] text-slate-100 antialiased`}>
+      <body suppressHydrationWarning className={`${inter.variable} ${spaceGrotesk.variable} min-h-screen bg-[#0b1326] text-slate-100 antialiased`}>
         <div className="relative min-h-screen bg-[radial-gradient(circle_at_10%_10%,rgba(192,193,255,0.2),transparent_35%),radial-gradient(circle_at_90%_20%,rgba(99,102,241,0.15),transparent_30%),#0b1326]">
           <SiteHeader
             locale={locale}

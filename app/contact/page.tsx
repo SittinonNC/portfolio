@@ -32,7 +32,7 @@ export default async function ContactPage() {
         <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#131e35]">
           <div className="relative aspect-square w-full">
             <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr6qyOjk79nfkAYEI5_-0LOkqwQcXgD827KacEQfGVY1JmMP7mnCg83BlfUUdGdU_pUrGAUF-VuCcboNGciLmHl1dmr4uhGJ-RvYvjjmnLgXguNc-IXR3XizX3A6pyB1FPDaeGhLYoIoXo7QBVf2Fh0u0Vg-quneK2S0hgXZZsHZMKiVi3L3iKXFNh1tUqsDJyyb4nUx8ObWdRnKTXqzF16ZJ_k7hZi5VZxcEk5WDUsJyilEdi7C6hnGD1mzCa66az58R6_qnOY-fk"
+              src="https://www.axiomlaw.com/hubfs/types-of-contracts.jpg"
               alt="Professional portrait"
               fill
               sizes="(max-width: 1024px) 100vw, 38vw"

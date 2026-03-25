@@ -12,18 +12,18 @@ export default async function HomePage() {
   const { dict } = await getI18n();
   const highlightedProjects = dict.projectsPage.projects.slice(0, 2);
   const profileMeta = [dict.profile.email, dict.profile.phone].filter(Boolean).join(" · ");
-  const profileImage = dict.profile.image || "/certificates/images/profile.png" || "https://scontent.fbkk12-4.fna.fbcdn.net/v/t39.30808-6/439867237_1840116639751910_7768835124002691640_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEK8k06hf14U_2g5voVbfcOZin7LWJ58opmKfstYnnyikOnfD5fM0Q08h307W7da_A2hCptus4lLxsnl9I5Hb4W&_nc_ohc=J3rVjltBuq4Q7kNvwFBbKP-&_nc_oc=AdqvD6HBxV_aMtUgeVbklOUXHsMi9K-KIYNOGrKI52gJ9Tm6Jg-gmWd0v2GpFUe0imyyNkcYaSBal7wozjskz3ky&_nc_zt=23&_nc_ht=scontent.fbkk12-4.fna&_nc_gid=Zq5rZKYofsf9IRLem6iUWA&_nc_ss=7a32e&oh=00_AfypGNDBxECKlELiG6-oFtipXkYK-cm0yg8ZGHfjpEpIQA&oe=69CA1AA4";
+  const profileImage = dict.profile.image || "/certificates/images/profile.png";
 
   return (
     <main>
-      <section className="mx-auto grid min-h-[calc(100vh-5rem)] w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 py-20 lg:grid-cols-12 lg:px-8">
+      <section className="mx-auto grid min-h-[calc(100vh-5rem)] w-full max-w-7xl grid-cols-1 items-center gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-12 lg:gap-12 lg:px-8">
         <div className="space-y-7 lg:col-span-7 motion-rise-in">
           <div className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-[#1a2440]/80 px-3 py-1">
             <span className="h-2 w-2 animate-pulse rounded-full bg-indigo-300" />
             <span className="text-xs uppercase tracking-[0.2em] text-indigo-200">{dict.home.availability}</span>
           </div>
 
-          <h1 className="font-headline text-5xl font-bold leading-[0.95] tracking-tight text-slate-100 md:text-7xl">
+          <h1 className="font-headline text-4xl font-bold leading-[0.95] tracking-tight text-slate-100 sm:text-5xl md:text-7xl">
             {formatMessage(dict.home.headline, { name: dict.profile.name, role: dict.profile.role }).split(dict.profile.name).map((part, index, arr) => (
               <span key={`${part}-${index}`}>
                 {part}
@@ -32,7 +32,7 @@ export default async function HomePage() {
             ))}
           </h1>
 
-          <p className="max-w-2xl text-lg leading-relaxed text-slate-300 md:text-xl">{dict.profile.summary}</p>
+          <p className="max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg md:text-xl">{dict.profile.summary}</p>
 
           <p className="text-sm text-slate-400">{profileMeta}</p>
 
@@ -74,8 +74,8 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#101a30]/90 py-20">
-        <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
+      <section className="bg-[#101a30]/90 py-16 sm:py-20">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
               <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">{dict.home.stackEyebrow}</p>
@@ -106,7 +106,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-7xl px-6 py-20 lg:px-8">
+      <section className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mb-10 flex items-center gap-3">
           <h2 className="font-headline text-3xl font-semibold text-slate-100">{dict.home.featuredWork}</h2>
           <div className="h-px flex-1 bg-white/10" />

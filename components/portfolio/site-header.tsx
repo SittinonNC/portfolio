@@ -46,7 +46,7 @@ export function SiteHeader({ locale, profileName, navItems, contactLabel, langua
           {profileName}
         </Link>
 
-        <div className="hidden items-center gap-6 lg:flex">
+        <div className="hidden items-center gap-8 lg:flex lg:ml-16">
           {navItems.map((item) => {
             const active =
               item.href === "/"
@@ -115,7 +115,7 @@ export function SiteHeader({ locale, profileName, navItems, contactLabel, langua
 
       {isMenuOpen ? (
         <div className="border-t border-white/10 px-4 py-3 lg:hidden">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             {navItems.map((item) => (
               <Link
                 key={item.label}

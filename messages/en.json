@@ -8,18 +8,42 @@
     "github": "https://github.com/SittinonNC",
     "summary": "Full-stack Developer with hands-on industry experience building enterprise-grade web applications. Currently interning at Bluebik Digital, delivering high-value transaction systems with modern frameworks.",
     "socialLinks": [
-      { "label": "GitHub", "href": "https://github.com/SittinonNC" },
-      { "label": "Email", "href": "mailto:sittinon.tongsua@gmail.com" },
-      { "label": "Phone", "href": "tel:+66927545385" }
+      {
+        "label": "GitHub",
+        "href": "https://github.com/SittinonNC"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:sittinon.tongsua@gmail.com"
+      },
+      {
+        "label": "Phone",
+        "href": "tel:+66927545385"
+      }
     ]
   },
   "header": {
     "navItems": [
-      { "label": "Home", "href": "/" },
-      { "label": "Projects", "href": "/projects" },
-      { "label": "Skills", "href": "/skills" },
-      { "label": "Experience", "href": "/skills#experience" },
-      { "label": "Contact", "href": "/contact" }
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Projects",
+        "href": "/projects"
+      },
+      {
+        "label": "Skills",
+        "href": "/skills"
+      },
+      {
+        "label": "Experience",
+        "href": "/skills#experience"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
     ],
     "contactCta": "Contact",
     "languageLabel": "Language",
@@ -75,7 +99,14 @@
         "category": "Bluebik Digital Internship",
         "description": "Built core User Management and Admin modules with strict RBAC, delivered 20+ reusable pixel-perfect components from Figma, and optimized global state + API flow with Zustand, TanStack Query, and Axios.",
         "image": "",
-        "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "TanStack Query", "Zod"],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Zustand",
+          "TanStack Query",
+          "Zod"
+        ],
         "demoUrl": "#",
         "featured": true
       },
@@ -84,7 +115,14 @@
         "category": "Personal Project · 2026",
         "description": "A bilingual educational document-sharing platform with hybrid encryption (RSA-OAEP + AES-GCM), sub-second TTFB via RSC + caching strategies, and real-time capabilities through Supabase.",
         "image": "/certificates/images/tiwgun.png",
-        "stack": ["Next.js 16", "React 19", "Supabase", "GSAP", "Zustand", "TanStack Query"],
+        "stack": [
+          "Next.js 16",
+          "React 19",
+          "Supabase",
+          "GSAP",
+          "Zustand",
+          "TanStack Query"
+        ],
         "demoUrl": "https://tiwgun.vercel.app/th"
       },
       {
@@ -92,7 +130,12 @@
         "category": "Group Project · 2024",
         "description": "Built a full-stack e-commerce platform in a team of four, including relational database design for users, products, and transactions in an Agile workflow.",
         "image": "",
-        "stack": ["Angular", "Node.js", "Express.js", "SQL Server"],
+        "stack": [
+          "Angular",
+          "Node.js",
+          "Express.js",
+          "SQL Server"
+        ],
         "demoUrl": "#"
       },
       {
@@ -100,15 +143,24 @@
         "category": "Vibe Code Project · 2026",
         "description": "An online photobooth-style web app built with Next.js for fun creative shoots and quick photo sessions.",
         "image": "/certificates/images/cutebooth.png",
-        "stack": ["Next.js", "React", "TypeScript"],
+        "stack": [
+          "Next.js",
+          "React",
+          "TypeScript"
+        ],
         "demoUrl": "https://www.cutebooth.app/"
       },
       {
         "title": "Saad Map",
-        "category": "Personal Project · Songkran 2025",
+        "category": "Personal Project · Songkran 2026",
         "description": "A real-time crowdsourced interactive map for Songkran festival — pin water splashing spots, traffic jams, security checkpoints, events, and first aid stations with community-driven reliability filtering.",
         "image": "/certificates/images/saadmap.png",
-        "stack": ["Next.js", "React", "Leaflet", "TypeScript"],
+        "stack": [
+          "Next.js",
+          "React",
+          "Leaflet",
+          "TypeScript"
+        ],
         "demoUrl": "https://www.saadmap.online/"
       }
     ]
@@ -188,12 +240,33 @@
     "downloadResume": "Download Resume",
     "contactMe": "Contact Me",
     "skillRows": [
-      { "label": "Next.js / React", "value": 93 },
-      { "label": "TypeScript / Node.js", "value": 90 },
-      { "label": "State + Query (Zustand / TanStack)", "value": 88 },
-      { "label": "Validation + API Design (Zod / Axios)", "value": 87 }
+      {
+        "label": "Next.js / React",
+        "value": 93
+      },
+      {
+        "label": "TypeScript / Node.js",
+        "value": 90
+      },
+      {
+        "label": "State + Query (Zustand / TanStack)",
+        "value": 88
+      },
+      {
+        "label": "Validation + API Design (Zod / Axios)",
+        "value": 87
+      }
     ],
-    "tooling": ["Shadcn UI", "GSAP", "Supabase", "SQL Server", "Git/GitHub", "Postman", "Azure", "Power BI"],
+    "tooling": [
+      "Shadcn UI",
+      "GSAP",
+      "Supabase",
+      "SQL Server",
+      "Git/GitHub",
+      "Postman",
+      "Azure",
+      "Power BI"
+    ],
     "experiences": [
       {
         "year": "Jan 2025 — Present",

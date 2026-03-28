@@ -102,6 +102,14 @@
         "image": "/certificates/images/cutebooth.png",
         "stack": ["Next.js", "React", "TypeScript"],
         "demoUrl": "https://www.cutebooth.app/"
+      },
+      {
+        "title": "Saad Map",
+        "category": "โปรเจกต์ส่วนตัว · สงกรานต์ 2025",
+        "description": "แผนที่แบบเรียลไทม์จากชุมชนสำหรับเทศกาลสงกรานต์ — ปักหมุดจุดเล่นน้ำ รถติด จุดตรวจ งานอีเวนต์ และจุดปฐมพยาบาล พร้อมระบบกรองความน่าเชื่อถือจากผู้ใช้",
+        "image": "/certificates/images/saadmap.png",
+        "stack": ["Next.js", "React", "Leaflet", "TypeScript"],
+        "demoUrl": "https://www.saadmap.online/"
       }
     ]
   },

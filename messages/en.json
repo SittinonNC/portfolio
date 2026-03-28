@@ -102,6 +102,14 @@
         "image": "/certificates/images/cutebooth.png",
         "stack": ["Next.js", "React", "TypeScript"],
         "demoUrl": "https://www.cutebooth.app/"
+      },
+      {
+        "title": "Saad Map",
+        "category": "Personal Project · Songkran 2025",
+        "description": "A real-time crowdsourced interactive map for Songkran festival — pin water splashing spots, traffic jams, security checkpoints, events, and first aid stations with community-driven reliability filtering.",
+        "image": "/certificates/images/saadmap.png",
+        "stack": ["Next.js", "React", "Leaflet", "TypeScript"],
+        "demoUrl": "https://www.saadmap.online/"
       }
     ]
   },

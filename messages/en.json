@@ -162,6 +162,73 @@
           "TypeScript"
         ],
         "demoUrl": "https://www.saadmap.online/"
+      },
+      {
+        "title": "Harkun — Expense Splitter",
+        "category": "Personal Project · 2026",
+        "description": "A group expense-splitting app supporting equal, custom amount, and percentage-based splits. Features a smart settlement algorithm that minimizes transactions and shareable sessions via URL.",
+        "image": "/certificates/images/hrakun.png",
+        "stack": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS 4"
+        ],
+        "demoUrl": "https://harkun.vercel.app"
+      },
+      {
+        "title": "Market Analysis Bot",
+        "category": "Personal Project · 2026",
+        "description": "Automated financial analysis system that delivers 3× daily LINE reports covering stocks, gold, crypto, and Forex with full indicator suite (RSI, MACD, Bollinger Bands, EMA, ATR), AI-powered Thai-language analysis via Groq LLaMA, and real-time price alerts.",
+        "image": "/certificates/images/market-analysis-bot.png",
+        "stack": [
+          "Python 3.11",
+          "yfinance",
+          "pandas",
+          "Groq AI",
+          "LINE API",
+          "GitHub Actions"
+        ],
+        "demoUrl": "#"
+      },
+      {
+        "title": "Sawasdee Wellness",
+        "category": "Fastwork Client Demo · 2026",
+        "description": "A wellness platform demo delivered as a Fastwork freelance project.",
+        "image": "/certificates/images/sawasdee-wellness.png",
+        "stack": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS 4"
+        ],
+        "demoUrl": "https://sawasdee-wellness.vercel.app"
+      },
+      {
+        "title": "Fitness Reward",
+        "category": "Fastwork Client Demo · 2026",
+        "description": "A fitness reward platform demo delivered as a Fastwork freelance project.",
+        "image": "/certificates/images/fitness-reward.png",
+        "stack": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
+        ],
+        "demoUrl": "https://fitness-reward.vercel.app"
+      },
+      {
+        "title": "React Concepts",
+        "category": "Personal Learning · 2026",
+        "description": "An exploration project for learning and experimenting with React and Next.js patterns and concepts.",
+        "image": "/certificates/images/react-concepts.png",
+        "stack": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS 4"
+        ],
+        "demoUrl": "https://react-concepts-theta.vercel.app"
       }
     ]
   },

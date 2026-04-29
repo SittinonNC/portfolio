@@ -110,6 +110,73 @@
         "image": "/certificates/images/saadmap.png",
         "stack": ["Next.js", "React", "Leaflet", "TypeScript"],
         "demoUrl": "https://www.saadmap.online/"
+      },
+      {
+        "title": "Harkun — แบ่งค่าใช้จ่าย",
+        "category": "โปรเจกต์ส่วนตัว · 2026",
+        "description": "แอปแบ่งค่าใช้จ่ายสำหรับกลุ่มเพื่อน รองรับการแบ่งแบบ equal, custom amount และ percentage พร้อม smart settlement algorithm ที่คำนวณการโอนเงินให้น้อยที่สุด และแชร์ session ผ่าน URL ได้ทันที",
+        "image": "/certificates/images/hrakun.png",
+        "stack": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS 4"
+        ],
+        "demoUrl": "https://harkun.vercel.app"
+      },
+      {
+        "title": "Market Analysis Bot",
+        "category": "โปรเจกต์ส่วนตัว · 2026",
+        "description": "ระบบวิเคราะห์ตลาดการเงินอัตโนมัติ ส่งรายงานผ่าน LINE วันละ 3 ครั้ง ครอบคลุมหุ้น ทอง คริปโต และ Forex รองรับ indicator ครบชุด (RSI, MACD, Bollinger Bands, EMA, ATR) วิเคราะห์เป็นภาษาไทยด้วย Groq LLaMA และส่ง price alert แบบ real-time",
+        "image": "/certificates/images/market-analysis-bot.png",
+        "stack": [
+          "Python 3.11",
+          "yfinance",
+          "pandas",
+          "Groq AI",
+          "LINE API",
+          "GitHub Actions"
+        ],
+        "demoUrl": "#"
+      },
+      {
+        "title": "Sawasdee Wellness",
+        "category": "งาน Fastwork · 2026",
+        "description": "เว็บ wellness platform ที่พัฒนาเป็น demo สำหรับลูกค้าผ่าน Fastwork",
+        "image": "/certificates/images/sawasdee-wellness.png",
+        "stack": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS 4"
+        ],
+        "demoUrl": "https://sawasdee-wellness.vercel.app"
+      },
+      {
+        "title": "Fitness Reward",
+        "category": "งาน Fastwork · 2026",
+        "description": "เว็บ fitness reward platform ที่พัฒนาเป็น demo สำหรับลูกค้าผ่าน Fastwork",
+        "image": "/certificates/images/fitness-reward.png",
+        "stack": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
+        ],
+        "demoUrl": "https://fitness-reward.vercel.app"
+      },
+      {
+        "title": "React Concepts",
+        "category": "เรียนรู้ด้วยตัวเอง · 2026",
+        "description": "โปรเจกต์ทดลองและเรียนรู้ pattern และ concept ต่าง ๆ ของ React และ Next.js",
+        "image": "/certificates/images/react-concepts.png",
+        "stack": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS 4"
+        ],
+        "demoUrl": "https://react-concepts-theta.vercel.app"
       }
     ]
   },

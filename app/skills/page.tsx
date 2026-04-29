@@ -115,6 +115,12 @@ export default async function SkillsPage() {
           >
             {dict.skillsPage.downloadResume}
           </a>
+            <a
+            href="/certificates/pdfs/CV.pdf"
+            download
+            className="rounded-xl bg-indigo-900 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-950"          >
+            {dict.home.downloadCV}
+          </a>
           <Link href={`mailto:${dict.profile.email}`} className="rounded-xl border border-indigo-700 px-4 py-2 text-sm font-semibold text-indigo-800">
             {dict.skillsPage.contactMe}
           </Link>

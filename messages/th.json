@@ -6,7 +6,7 @@
     "email": "sittinon.tongsua@gmail.com",
     "phone": "092-754-5385",
     "github": "https://github.com/SittinonNC",
-    "summary": "นักพัฒนา Full-stack ที่มีประสบการณ์จริงในการสร้างเว็บแอปพลิเคชันระดับองค์กร ปัจจุบันฝึกงานที่ Bluebik Digital และพัฒนาระบบธุรกรรมมูลค่าสูงด้วยเฟรมเวิร์กสมัยใหม่",
+    "summary": "นักพัฒนา Full-Stack ที่เชี่ยวชาญด้าน Frontend มีประสบการณ์จริงในการสร้างเว็บแอปพลิเคชันระดับองค์กรและโปรเจกต์ส่วนตัว ผ่านการฝึกงานที่ Bluebik Digital พัฒนาระบบธุรกรรมมูลค่าสูง มีพื้นฐานแข็งแรงด้าน UI engineering และรอบรู้ทั้ง full stack — จบการศึกษาด้วยเกียรตินิยมอันดับหนึ่ง (GPAX 3.51) และได้รับรางวัล Excellent Presentation Award จาก AUCC2025",
     "socialLinks": [
       { "label": "GitHub", "href": "https://github.com/SittinonNC" },
       { "label": "อีเมล", "href": "mailto:sittinon.tongsua@gmail.com" },
@@ -42,12 +42,13 @@
     "coreSkillsLabel": "01 / ทักษะหลัก",
     "coreSkillsTitle": "การพัฒนาเว็บสำหรับงานจริง",
     "experienceLabel": "02 / ประสบการณ์",
-    "experiencePeriod": "2025 - ปัจจุบัน",
+    "experiencePeriod": "พ.ค. 2568 – 2569",
     "experienceRole": "Developer Intern @ Bluebik Digital",
     "featuredWork": "ผลงานเด่น",
     "ctaHeading": "มาสร้างโปรดักต์ถัดไปด้วยกัน",
     "startProject": "เริ่มโปรเจกต์",
     "emailMe": "ส่งอีเมล",
+    "downloadCV": "ดาวน์โหลด CV",
     "coreStack": [
       "Next.js 16",
       "React 19",
@@ -192,7 +193,7 @@
     "educationPeriod": "2022 - คาดว่าจะจบ 2026",
     "educationDegree": "วิทยาศาสตรบัณฑิต สาขาเทคโนโลยีสารสนเทศ",
     "educationSchool": "มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา",
-    "educationGpa": "GPAX 3.49 / 4.00 (เกียรตินิยมอันดับสอง)",
+    "educationGpa": "GPAX 3.51 / 4.00 (เกียรตินิยมอันดับหนึ่ง)",
     "awardsTitle": "รางวัลและใบรับรอง",
     "certificatesTitle": "ใบรับรอง (Certificates)",
     "viewCredential": "ดูใบรับรอง",
@@ -255,22 +256,24 @@
     "downloadResume": "ดาวน์โหลด Resume",
     "contactMe": "ติดต่อผม",
     "skillRows": [
-      { "label": "Next.js / React", "value": 93 },
-      { "label": "TypeScript / Node.js", "value": 90 },
+      { "label": "Next.js / React (App Router)", "value": 93 },
+      { "label": "TypeScript / JavaScript (ES6+)", "value": 90 },
       { "label": "State + Query (Zustand / TanStack)", "value": 88 },
-      { "label": "Validation + API Design (Zod / Axios)", "value": 87 }
+      { "label": "Node.js / Express.js", "value": 83 },
+      { "label": "Python / FastAPI", "value": 75 },
+      { "label": "Databases (Supabase / Firebase / SQL)", "value": 80 }
     ],
-    "tooling": ["Shadcn UI", "GSAP", "Supabase", "SQL Server", "Git/GitHub", "Postman", "Azure", "Power BI"],
+    "tooling": ["Shadcn UI", "Radix UI", "GSAP", "Framer Motion", "Leaflet", "Zod", "Axios", "React Hook Form", "Supabase", "Firebase Realtime DB", "SQL Server", "Git / GitHub", "GitHub Actions", "Vercel", "Figma", "Postman", "Microsoft Azure", "Power BI"],
     "experiences": [
       {
-        "year": "ม.ค. 2025 — ปัจจุบัน",
+        "year": "พ.ค. 2568 – 2569",
         "role": "Developer Intern",
         "company": "Bluebik Digital Company Limited",
         "points": [
-          "พัฒนาโมดูล User Management และ Admin พร้อม Role-Based Access Control ตามเอกสาร SA และมาตรฐานโค้ดของทีม",
-          "สร้างคอมโพเนนต์ UI มากกว่า 20 รายการจาก Figma ให้ตรงดีไซน์ด้วย Next.js, Tailwind CSS และ Shadcn UI",
-          "ดูแล global state ด้วย Zustand และปรับปรุง data fetching/caching ด้วย TanStack Query + Axios",
-          "ทำ client-side validation ด้วย Zod เพื่อลด payload ที่ไม่ถูกต้องก่อนถึง backend"
+          "พัฒนาโมดูล User Management และ Admin พร้อม Role-Based Access Control (RBAC) ตามเอกสาร SA",
+          "สร้าง reusable components จาก Figma mockup (Next.js, Tailwind CSS, Shadcn UI) ลดเวลาพัฒนา UI ลง ~30%",
+          "ดูแล global state ด้วย Zustand และปรับปรุง data fetching/caching ด้วย TanStack Query และ Axios",
+          "ทำ client-side validation ด้วย Zod schemas เพื่อป้องกัน API payload ที่ไม่ถูกต้อง"
         ]
       },
       {

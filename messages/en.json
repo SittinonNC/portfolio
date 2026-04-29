@@ -6,7 +6,7 @@
     "email": "sittinon.tongsua@gmail.com",
     "phone": "092-754-5385",
     "github": "https://github.com/SittinonNC",
-    "summary": "Full-stack Developer with hands-on industry experience building enterprise-grade web applications. Currently interning at Bluebik Digital, delivering high-value transaction systems with modern frameworks.",
+    "summary": "Frontend-focused Full-Stack Developer with hands-on industry experience building enterprise and personal web applications. Previously interned at Bluebik Digital delivering a high-value transaction system. Strong foundation in UI engineering with working knowledge across the full stack — graduated First-Class Honours (GPAX 3.51) and received the Excellent Presentation Award at AUCC2025.",
     "socialLinks": [
       {
         "label": "GitHub",
@@ -66,12 +66,13 @@
     "coreSkillsLabel": "01 / CORE SKILLS",
     "coreSkillsTitle": "Production Web Development",
     "experienceLabel": "02 / EXPERIENCE",
-    "experiencePeriod": "2025 - Present",
+    "experiencePeriod": "May 2025 – 2026",
     "experienceRole": "Developer Intern @ Bluebik Digital",
     "featuredWork": "Featured Work",
     "ctaHeading": "Let's build your next product.",
     "startProject": "Start a Project",
     "emailMe": "Email Me",
+    "downloadCV": "Download CV",
     "coreStack": [
       "Next.js 16",
       "React 19",
@@ -244,7 +245,7 @@
     "educationPeriod": "2022 - Expected 2026",
     "educationDegree": "B.Sc. Information Technology",
     "educationSchool": "Kasetsart University, Sriracha Campus",
-    "educationGpa": "GPAX 3.49 / 4.00 (Second-Class Honours)",
+    "educationGpa": "GPAX 3.51 / 4.00 (First-Class Honours)",
     "awardsTitle": "Awards & Certifications",
     "certificatesTitle": "Certificates",
     "viewCredential": "View Credential",
@@ -308,11 +309,11 @@
     "contactMe": "Contact Me",
     "skillRows": [
       {
-        "label": "Next.js / React",
+        "label": "Next.js / React (App Router)",
         "value": 93
       },
       {
-        "label": "TypeScript / Node.js",
+        "label": "TypeScript / JavaScript (ES6+)",
         "value": 90
       },
       {
@@ -320,30 +321,48 @@
         "value": 88
       },
       {
-        "label": "Validation + API Design (Zod / Axios)",
-        "value": 87
+        "label": "Node.js / Express.js",
+        "value": 83
+      },
+      {
+        "label": "Python / FastAPI",
+        "value": 75
+      },
+      {
+        "label": "Databases (Supabase / Firebase / SQL)",
+        "value": 80
       }
     ],
     "tooling": [
       "Shadcn UI",
+      "Radix UI",
       "GSAP",
+      "Framer Motion",
+      "Leaflet",
+      "Zod",
+      "Axios",
+      "React Hook Form",
       "Supabase",
+      "Firebase Realtime DB",
       "SQL Server",
-      "Git/GitHub",
+      "Git / GitHub",
+      "GitHub Actions",
+      "Vercel",
+      "Figma",
       "Postman",
-      "Azure",
+      "Microsoft Azure",
       "Power BI"
     ],
     "experiences": [
       {
-        "year": "Jan 2025 — Present",
+        "year": "May 2025 – 2026",
         "role": "Developer Intern",
         "company": "Bluebik Digital Company Limited",
         "points": [
-          "Built User Management and Admin modules with strict Role-Based Access Control according to SA documentation and team coding standards.",
-          "Engineered 20+ reusable, pixel-perfect UI components from Figma with Next.js, Tailwind CSS, and Shadcn UI.",
-          "Managed global state with Zustand and optimized data fetching/caching via TanStack Query + Axios.",
-          "Implemented client-side validation with Zod to prevent malformed payloads reaching backend services."
+          "Built User Management and Admin modules with Role-Based Access Control (RBAC) per SA documentation.",
+          "Engineered reusable components from Figma mockups (Next.js, Tailwind CSS, Shadcn UI), cutting UI dev time ~30%.",
+          "Managed global state with Zustand; optimised fetching and caching with TanStack Query and Axios.",
+          "Implemented client-side validation using Zod schemas to prevent malformed API payloads."
         ]
       },
       {

@@ -24,6 +24,12 @@ export default async function ProjectsPage() {
           {dict.projectsPage.titlePrefix} <span className="text-indigo-300">{dict.projectsPage.titleHighlight}</span>
         </h1>
         <p className="max-w-2xl text-lg leading-relaxed text-slate-300">{dict.projectsPage.description}</p>
+        <p className="flex max-w-2xl items-start gap-3 rounded-xl border border-emerald-300/20 bg-emerald-300/5 px-4 py-3 text-sm leading-relaxed text-slate-300">
+          <span className="mt-0.5 shrink-0 rounded-md bg-emerald-300/15 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-emerald-200">
+            {dict.projectsPage.aiBuiltBadge}
+          </span>
+          <span>{dict.projectsPage.aiBuiltNote}</span>
+        </p>
       </header>
 
       {featured && (
@@ -70,7 +76,14 @@ export default async function ProjectsPage() {
               </div>
             )}
             <div className="flex flex-1 flex-col gap-4 p-6">
-              <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">{project.category}</p>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">{project.category}</p>
+                {project.aiBuilt && (
+                  <span className="rounded-md border border-emerald-300/30 bg-emerald-300/10 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-emerald-200">
+                    {dict.projectsPage.aiBuiltBadge}
+                  </span>
+                )}
+              </div>
               <h3 className="font-headline text-2xl font-semibold text-slate-100">{project.title}</h3>
               <p className="flex-1 text-sm leading-relaxed text-slate-300">{project.description}</p>
               <div className="flex flex-wrap gap-2">
@@ -80,14 +93,23 @@ export default async function ProjectsPage() {
                   </Chip>
                 ))}
               </div>
-              <Link
-                href={project.demoUrl}
-                className="pt-1 text-sm font-medium text-indigo-300 hover:text-indigo-200"
-                target={project.demoUrl.startsWith("http") ? "_blank" : undefined}
-                rel={project.demoUrl.startsWith("http") ? "noreferrer" : undefined}
-              >
-                {dict.projectsPage.viewDemo}
-              </Link>
+              <div className="flex flex-wrap gap-5 pt-1">
+                {project.demoUrl && project.demoUrl !== "#" && (
+                  <Link
+                    href={project.demoUrl}
+                    className="text-sm font-medium text-indigo-300 hover:text-indigo-200"
+                    target={project.demoUrl.startsWith("http") ? "_blank" : undefined}
+                    rel={project.demoUrl.startsWith("http") ? "noreferrer" : undefined}
+                  >
+                    {dict.projectsPage.viewDemo}
+                  </Link>
+                )}
+                {project.repoUrl && (
+                  <Link href={project.repoUrl} className="text-sm font-medium text-indigo-300 hover:text-indigo-200" target="_blank" rel="noreferrer">
+                    {dict.projectsPage.viewCode}
+                  </Link>
+                )}
+              </div>
             </div>
           </article>
         ))}

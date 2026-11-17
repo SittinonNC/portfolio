@@ -1,25 +1,49 @@
 {
   "profile": {
     "name": "Sittinon Tongsua",
-    "role": "นักพัฒนา Full-Stack",
+    "role": "นักพัฒนา Frontend / Full-Stack",
     "image": "/certificates/images/profile.png",
     "email": "sittinon.tongsua@gmail.com",
     "phone": "092-754-5385",
     "github": "https://github.com/SittinonNC",
-    "summary": "นักพัฒนา Full-Stack ที่เชี่ยวชาญด้าน Frontend มีประสบการณ์จริงในการสร้างเว็บแอปพลิเคชันระดับองค์กรและโปรเจกต์ส่วนตัว ผ่านการฝึกงานที่ Bluebik Digital พัฒนาระบบธุรกรรมมูลค่าสูง มีพื้นฐานแข็งแรงด้าน UI engineering และรอบรู้ทั้ง full stack — จบการศึกษาด้วยเกียรตินิยมอันดับหนึ่ง (GPAX 3.51) และได้รับรางวัล Excellent Presentation Award จาก AUCC2025",
+    "summary": "นักพัฒนา Full-Stack ที่ถนัดด้าน Frontend จบสาขาเทคโนโลยีสารสนเทศ เกียรตินิยมอันดับหนึ่ง (GPAX 3.51) ผ่านการฝึกงาน 12 เดือนที่ Bluebik Digital (จันทร์–ศุกร์ เต็มวัน) พัฒนาฟีเจอร์ด้วย Next.js และ TypeScript ให้ระบบจัดการการชำระเงินของธนาคาร ถนัดแปลงดีไซน์ Figma เป็น reusable components เชื่อมต่อ REST API และเขียน Jest test ได้รับรางวัล Excellent Presentation Award จาก AUCC2025",
     "socialLinks": [
-      { "label": "GitHub", "href": "https://github.com/SittinonNC" },
-      { "label": "อีเมล", "href": "mailto:sittinon.tongsua@gmail.com" },
-      { "label": "โทรศัพท์", "href": "tel:+66927545385" }
+      {
+        "label": "GitHub",
+        "href": "https://github.com/SittinonNC"
+      },
+      {
+        "label": "อีเมล",
+        "href": "mailto:sittinon.tongsua@gmail.com"
+      },
+      {
+        "label": "โทรศัพท์",
+        "href": "tel:+66927545385"
+      }
     ]
   },
   "header": {
     "navItems": [
-      { "label": "หน้าแรก", "href": "/" },
-      { "label": "ผลงาน", "href": "/projects" },
-      { "label": "ทักษะ", "href": "/skills" },
-      { "label": "ประสบการณ์", "href": "/skills#experience" },
-      { "label": "ติดต่อ", "href": "/contact" }
+      {
+        "label": "หน้าแรก",
+        "href": "/"
+      },
+      {
+        "label": "ผลงาน",
+        "href": "/projects"
+      },
+      {
+        "label": "ทักษะ",
+        "href": "/skills"
+      },
+      {
+        "label": "ประสบการณ์",
+        "href": "/skills#experience"
+      },
+      {
+        "label": "ติดต่อ",
+        "href": "/contact"
+      }
     ],
     "contactCta": "ติดต่อ",
     "languageLabel": "ภาษา",
@@ -31,7 +55,7 @@
   },
   "home": {
     "metaTitle": "หน้าแรก",
-    "availability": "เปิดรับโอกาสฝึกงานและงานประจำ",
+    "availability": "เปิดรับงานประจำตำแหน่ง Junior Frontend / Full-Stack",
     "headline": "ผมคือ {name} เป็น{role}ที่โฟกัสการสร้างระบบเว็บสมัยใหม่",
     "viewProjects": "ดูผลงาน",
     "getInTouch": "ติดต่อผม",
@@ -42,7 +66,7 @@
     "coreSkillsLabel": "01 / ทักษะหลัก",
     "coreSkillsTitle": "การพัฒนาเว็บสำหรับงานจริง",
     "experienceLabel": "02 / ประสบการณ์",
-    "experiencePeriod": "พ.ค. 2568 – 2569",
+    "experiencePeriod": "พ.ค. 2568 – พ.ค. 2569",
     "experienceRole": "Developer Intern @ Bluebik Digital",
     "featuredWork": "ผลงานเด่น",
     "ctaHeading": "มาสร้างโปรดักต์ถัดไปด้วยกัน",
@@ -76,7 +100,14 @@
         "category": "ฝึกงานที่ Bluebik Digital",
         "description": "พัฒนาโมดูล User Management และ Admin พร้อม RBAC อย่างเข้มงวด สร้างคอมโพเนนต์จาก Figma มากกว่า 20 รายการ และปรับปรุง state/API flow ด้วย Zustand, TanStack Query และ Axios",
         "image": "",
-        "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "TanStack Query", "Zod"],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Zustand",
+          "TanStack Query",
+          "Zod"
+        ],
         "demoUrl": "#",
         "featured": true
       },
@@ -85,7 +116,14 @@
         "category": "โปรเจกต์ส่วนตัว · 2026",
         "description": "แพลตฟอร์มแบ่งปันเอกสารการเรียนรู้สองภาษา (ไทย/อังกฤษ) ใช้ hybrid encryption (RSA-OAEP + AES-GCM) รองรับ TTFB ต่ำกว่าหนึ่งวินาทีด้วย RSC + caching และมีความสามารถแบบเรียลไทม์ผ่าน Supabase",
         "image": "/certificates/images/tiwgun.png",
-        "stack": ["Next.js 16", "React 19", "Supabase", "GSAP", "Zustand", "TanStack Query"],
+        "stack": [
+          "Next.js 16",
+          "React 19",
+          "Supabase",
+          "GSAP",
+          "Zustand",
+          "TanStack Query"
+        ],
         "demoUrl": "https://tiwgun.vercel.app/th"
       },
       {
@@ -93,15 +131,59 @@
         "category": "โปรเจกต์กลุ่ม · 2024",
         "description": "พัฒนาระบบ E-Commerce แบบ Full-stack ร่วมทีม 4 คน รวมถึงออกแบบฐานข้อมูลเชิงสัมพันธ์สำหรับผู้ใช้ สินค้า และธุรกรรม ภายใต้กระบวนการ Agile",
         "image": "",
-        "stack": ["Angular", "Node.js", "Express.js", "SQL Server"],
+        "stack": [
+          "Angular",
+          "Node.js",
+          "Express.js",
+          "SQL Server"
+        ],
         "demoUrl": "#"
+      },
+      {
+        "title": "Quewbi",
+        "category": "SaaS · ใช้งานจริง · 2026",
+        "description": "แพลตฟอร์มจองคิวและจัดการร้านตัดผมผ่าน LINE ลูกค้าจองนัดหรือต่อคิว walk-in ผ่าน LINE OA ของร้าน ส่วนเจ้าของร้านจัดการสาขา บริการ ตารางช่าง แต้มสะสม และรายงานรายได้ได้จาก dashboard เดียว ใช้งานจริงแล้วที่ quewbi.com",
+        "image": "/certificates/images/quewbi.png",
+        "stack": [
+          "Next.js 16",
+          "React 19",
+          "PostgreSQL (Neon)",
+          "Drizzle ORM",
+          "Auth.js (LINE Login)",
+          "LINE Messaging API",
+          "Stripe",
+          "Vercel"
+        ],
+        "demoUrl": "https://quewbi.com",
+        "aiBuilt": true
+      },
+      {
+        "title": "Money App (สมุดเงิน)",
+        "category": "แอป iOS · 2026",
+        "description": "แอป iPhone จดรายรับรายจ่ายส่วนตัว ทำงานในเครื่องทั้งหมด ไม่มีเซิร์ฟเวอร์ จดได้ทั้งพิมพ์ สั่งด้วยเสียงผ่าน Siri หรือแชร์สลิปธนาคาร แอปอ่านยอดเงินด้วย OCR ในเครื่องและใช้ QR บนสลิปกันจดซ้ำ มีงบรายหมวด รายจ่ายประจำพร้อมแจ้งเตือน เป้าหมายการออม กราฟ วิดเจ็ต ล็อกด้วย Face ID และสำรองข้อมูลเป็น JSON/CSV",
+        "image": "/certificates/images/money-app.png",
+        "stack": [
+          "Swift 6",
+          "SwiftUI",
+          "SwiftData",
+          "Vision OCR",
+          "App Intents (Siri)",
+          "WidgetKit"
+        ],
+        "demoUrl": "#",
+        "repoUrl": "https://github.com/SittinonNC/Money-app",
+        "aiBuilt": true
       },
       {
         "title": "CuteBooth",
         "category": "โปรเจกต์ Vibe Code · 2026",
         "description": "เว็บแนวออนไลน์โฟโต้บูธที่ทำด้วย Next.js สำหรับถ่ายเล่นแบบสนุก ๆ และใช้งานได้รวดเร็ว",
         "image": "/certificates/images/cutebooth.png",
-        "stack": ["Next.js", "React", "TypeScript"],
+        "stack": [
+          "Next.js",
+          "React",
+          "TypeScript"
+        ],
         "demoUrl": "https://www.cutebooth.app/"
       },
       {
@@ -109,7 +191,12 @@
         "category": "โปรเจกต์ส่วนตัว · สงกรานต์ 2026",
         "description": "แผนที่แบบเรียลไทม์จากชุมชนสำหรับเทศกาลสงกรานต์ — ปักหมุดจุดเล่นน้ำ รถติด จุดตรวจ งานอีเวนต์ และจุดปฐมพยาบาล พร้อมระบบกรองความน่าเชื่อถือจากผู้ใช้",
         "image": "/certificates/images/saadmap.png",
-        "stack": ["Next.js", "React", "Leaflet", "TypeScript"],
+        "stack": [
+          "Next.js",
+          "React",
+          "Leaflet",
+          "TypeScript"
+        ],
         "demoUrl": "https://www.saadmap.online/"
       },
       {
@@ -179,7 +266,10 @@
         ],
         "demoUrl": "https://react-concepts-theta.vercel.app"
       }
-    ]
+    ],
+    "aiBuiltBadge": "สร้างด้วย AI",
+    "aiBuiltNote": "โปรเจกต์ที่มีป้าย “สร้างด้วย AI” เขียนโค้ดโดย AI coding agent ผมเป็นคนกำหนด requirement ตัดสินใจเรื่องตัวผลิตภัณฑ์ และทดสอบทุกฟีเจอร์เอง แต่ไม่ได้เขียนโค้ดเอง",
+    "viewCode": "ดูโค้ด"
   },
   "skillsPage": {
     "metaTitle": "ทักษะและประสบการณ์",
@@ -190,7 +280,7 @@
     "coreEngineering": "วิศวกรรมหลัก",
     "toolingPlatforms": "เครื่องมือและแพลตฟอร์ม",
     "education": "การศึกษา",
-    "educationPeriod": "2022 - คาดว่าจะจบ 2026",
+    "educationPeriod": "2565 – 2569",
     "educationDegree": "วิทยาศาสตรบัณฑิต สาขาเทคโนโลยีสารสนเทศ",
     "educationSchool": "มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา",
     "educationGpa": "GPAX 3.51 / 4.00 (เกียรตินิยมอันดับหนึ่ง)",
@@ -256,24 +346,62 @@
     "downloadResume": "ดาวน์โหลด Resume",
     "contactMe": "ติดต่อผม",
     "skillRows": [
-      { "label": "Next.js / React (App Router)", "value": 93 },
-      { "label": "TypeScript / JavaScript (ES6+)", "value": 90 },
-      { "label": "State + Query (Zustand / TanStack)", "value": 88 },
-      { "label": "Node.js / Express.js", "value": 83 },
-      { "label": "Python / FastAPI", "value": 75 },
-      { "label": "Databases (Supabase / Firebase / SQL)", "value": 80 }
+      {
+        "label": "Next.js / React (App Router)",
+        "value": 93
+      },
+      {
+        "label": "TypeScript / JavaScript (ES6+)",
+        "value": 90
+      },
+      {
+        "label": "State + Query (Zustand / TanStack)",
+        "value": 88
+      },
+      {
+        "label": "Node.js / Express.js",
+        "value": 83
+      },
+      {
+        "label": "Python / FastAPI",
+        "value": 75
+      },
+      {
+        "label": "Databases (Supabase / Firebase / SQL)",
+        "value": 80
+      }
     ],
-    "tooling": ["Shadcn UI", "Radix UI", "GSAP", "Framer Motion", "Leaflet", "Zod", "Axios", "React Hook Form", "Supabase", "Firebase Realtime DB", "SQL Server", "Git / GitHub", "GitHub Actions", "Vercel", "Figma", "Postman", "Microsoft Azure", "Power BI"],
+    "tooling": [
+      "Shadcn UI",
+      "Radix UI",
+      "GSAP",
+      "Framer Motion",
+      "Leaflet",
+      "Zod",
+      "Axios",
+      "React Hook Form",
+      "Supabase",
+      "Firebase Realtime DB",
+      "SQL Server",
+      "Git / GitHub",
+      "GitHub Actions",
+      "Vercel",
+      "Figma",
+      "Postman",
+      "Microsoft Azure",
+      "Power BI"
+    ],
     "experiences": [
       {
-        "year": "พ.ค. 2568 – 2569",
+        "year": "พ.ค. 2568 – พ.ค. 2569",
         "role": "Developer Intern",
         "company": "Bluebik Digital Company Limited",
         "points": [
           "พัฒนาโมดูล User Management และ Admin พร้อม Role-Based Access Control (RBAC) ตามเอกสาร SA",
-          "สร้าง reusable components จาก Figma mockup (Next.js, Tailwind CSS, Shadcn UI) ลดเวลาพัฒนา UI ลง ~30%",
-          "ดูแล global state ด้วย Zustand และปรับปรุง data fetching/caching ด้วย TanStack Query และ Axios",
-          "ทำ client-side validation ด้วย Zod schemas เพื่อป้องกัน API payload ที่ไม่ถูกต้อง"
+          "แปลงดีไซน์ Figma เป็นชุด reusable components (Next.js, Tailwind CSS, Shadcn UI) ที่ทีมนำไปใช้สร้างและแก้หน้าจอใหม่ได้เร็วขึ้น",
+          "ดูแล global state ด้วย Zustand และเชื่อมต่อ REST API ด้วย TanStack Query และ Axios",
+          "ทำ client-side validation ด้วย Zod schemas เพื่อป้องกัน API payload ที่ไม่ถูกต้อง",
+          "เขียน Jest unit test ครอบคลุมเคสถูก เคสผิด และ edge case ทำงานแบบ Scrum ใช้ Git flow แบบ main / dev / hotfix"
         ]
       },
       {
